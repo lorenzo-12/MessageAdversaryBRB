@@ -72,4 +72,6 @@ def generate_net(algorithm):
 
     #----------------------------------------------------------------
 
-generate_net("opodis")
+#generate_net("opodis")
+#generate_net("bracha")
+

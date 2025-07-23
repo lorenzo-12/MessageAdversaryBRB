@@ -104,12 +104,10 @@ def getOutputFile(net_name, ma_type, byz_num, ma_power, algorithm):
         path = path_results / "MA2"
     if ma_type == "ma3":
         path = path_results / "MA3"
-    output_file_name = path / name / category / algorithm / exp
+    output_file_name = path / name / category / algorithm / exp 
+    output_file_name = str(output_file_name).split("BRB/")[1]
     os.makedirs(path / name / category / algorithm, exist_ok=True)
-    
-    #print(f"{net_name:<50}{name:<40}{category:<20}{exp:<10}")
-    #print(output_file_name)
-    return str(output_file_name)
+    return str(output_file_name) 
 
 def changeAlg(net_json, alg):
     if (alg=="bracha"):
@@ -125,7 +123,7 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, algorithm: str = "brach
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}_t{byz_number}_d{ma_power}"
+    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma1", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200
@@ -157,7 +155,7 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, algorithm: str = "brach
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}_t{byz_number}_d{ma_power}"
+    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma2", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200
@@ -192,7 +190,7 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, algorithm: str = "brach
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}_t{byz_number}_d{ma_power}"
+    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma3", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200

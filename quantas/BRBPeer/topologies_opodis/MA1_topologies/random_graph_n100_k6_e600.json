@@ -1,8 +1,8 @@
 {
     "experiments": [
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -1514,7 +1514,7 @@
                         99
                     ]
                 },
-                "sender_id": 95,
+                "sender_id": 4,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1532,8 +1532,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d1",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d1.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d1.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -3045,7 +3045,7 @@
                         99
                     ]
                 },
-                "sender_id": 78,
+                "sender_id": 43,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3063,8 +3063,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d2",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d2.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d2.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -4576,7 +4576,7 @@
                         99
                     ]
                 },
-                "sender_id": 39,
+                "sender_id": 21,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -4594,8 +4594,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d3",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d3.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d3.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -6107,7 +6107,7 @@
                         99
                     ]
                 },
-                "sender_id": 18,
+                "sender_id": 24,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -6125,8 +6125,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d4",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d4.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d4.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -7638,7 +7638,7 @@
                         99
                     ]
                 },
-                "sender_id": 48,
+                "sender_id": 81,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -7656,8 +7656,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t0_d5",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t0_d5.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t0_d5.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -9169,7 +9169,7 @@
                         99
                     ]
                 },
-                "sender_id": 5,
+                "sender_id": 79,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -9187,8 +9187,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t1_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t1_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t1_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -10700,14 +10700,14 @@
                         99
                     ]
                 },
-                "sender_id": 37,
+                "sender_id": 74,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        55
+                        9
                     ]
                 },
                 "messageAdversary": {
@@ -10720,8 +10720,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t1_d1",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t1_d1.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t1_d1.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -12233,14 +12233,14 @@
                         99
                     ]
                 },
-                "sender_id": 87,
+                "sender_id": 10,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        56
+                        28
                     ]
                 },
                 "messageAdversary": {
@@ -12253,8 +12253,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t1_d2",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t1_d2.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t1_d2.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -13773,7 +13773,7 @@
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        60
+                        6
                     ]
                 },
                 "messageAdversary": {
@@ -13786,8 +13786,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t1_d3",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t1_d3.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t1_d3.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -15299,14 +15299,14 @@
                         99
                     ]
                 },
-                "sender_id": 17,
+                "sender_id": 23,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        50
+                        89
                     ]
                 },
                 "messageAdversary": {
@@ -15319,8 +15319,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t1_d4",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t1_d4.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t1_d4.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -16832,14 +16832,14 @@
                         99
                     ]
                 },
-                "sender_id": 45,
+                "sender_id": 61,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        0
+                        63
                     ]
                 },
                 "messageAdversary": {
@@ -16852,8 +16852,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t2_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t2_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t2_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -18365,15 +18365,15 @@
                         99
                     ]
                 },
-                "sender_id": 59,
+                "sender_id": 97,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        84,
-                        83
+                        22,
+                        42
                     ]
                 },
                 "messageAdversary": {
@@ -18386,8 +18386,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t2_d1",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t2_d1.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t2_d1.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -19899,15 +19899,15 @@
                         99
                     ]
                 },
-                "sender_id": 67,
+                "sender_id": 3,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        48,
-                        84
+                        46,
+                        70
                     ]
                 },
                 "messageAdversary": {
@@ -19920,8 +19920,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t2_d2",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t2_d2.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t2_d2.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -21433,15 +21433,15 @@
                         99
                     ]
                 },
-                "sender_id": 51,
+                "sender_id": 68,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        42,
-                        69
+                        87,
+                        21
                     ]
                 },
                 "messageAdversary": {
@@ -21454,8 +21454,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t2_d3",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t2_d3.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t2_d3.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -22967,15 +22967,15 @@
                         99
                     ]
                 },
-                "sender_id": 18,
+                "sender_id": 47,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        74,
-                        36
+                        57,
+                        28
                     ]
                 },
                 "messageAdversary": {
@@ -22988,8 +22988,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t3_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t3_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t3_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -24501,16 +24501,16 @@
                         99
                     ]
                 },
-                "sender_id": 5,
+                "sender_id": 58,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        97,
-                        29,
-                        62
+                        69,
+                        51,
+                        79
                     ]
                 },
                 "messageAdversary": {
@@ -24523,8 +24523,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t3_d1",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t3_d1.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t3_d1.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -26036,16 +26036,16 @@
                         99
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 98,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        18,
-                        71,
-                        98
+                        62,
+                        76,
+                        79
                     ]
                 },
                 "messageAdversary": {
@@ -26058,8 +26058,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t3_d2",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t3_d2.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t3_d2.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -27571,16 +27571,16 @@
                         99
                     ]
                 },
-                "sender_id": 96,
+                "sender_id": 27,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        3,
-                        90,
-                        88
+                        83,
+                        23,
+                        12
                     ]
                 },
                 "messageAdversary": {
@@ -27593,8 +27593,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t4_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t4_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t4_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -29106,17 +29106,17 @@
                         99
                     ]
                 },
-                "sender_id": 31,
+                "sender_id": 49,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        34,
-                        44,
-                        60,
-                        86
+                        33,
+                        4,
+                        35,
+                        9
                     ]
                 },
                 "messageAdversary": {
@@ -29129,8 +29129,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t4_d1",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t4_d1.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t4_d1.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -30642,17 +30642,17 @@
                         99
                     ]
                 },
-                "sender_id": 37,
+                "sender_id": 54,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        53,
-                        75,
-                        20,
-                        87
+                        22,
+                        69,
+                        62,
+                        16
                     ]
                 },
                 "messageAdversary": {
@@ -30665,8 +30665,8 @@
             "rounds": 200
         },
         {
-            "algorithm": "random_graph_n100_k6_e600_t5_d0",
-            "logFile": "/Users/lorenzo/Github/BRB/results/MA1/random_graph/n100_k6_e600/opodis/t5_d0.json",
+            "algorithm": "random_graph_n100_k6_e600",
+            "logFile": "results/MA1/random_graph/n100_k6_e600/opodis/t5_d0.json",
             "threadCount": 1,
             "distribution": {
                 "type": "uniform",
@@ -32178,18 +32178,18 @@
                         99
                     ]
                 },
-                "sender_id": 2,
+                "sender_id": 24,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        57,
-                        77,
-                        56,
-                        11,
-                        45
+                        44,
+                        37,
+                        54,
+                        33,
+                        89
                     ]
                 },
                 "messageAdversary": {
