@@ -905,7 +905,7 @@
                         98
                     ]
                 },
-                "sender_id": 67,
+                "sender_id": 69,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -917,7 +917,9 @@
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -1827,7 +1829,7 @@
                         98
                     ]
                 },
-                "sender_id": 14,
+                "sender_id": 5,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1839,7 +1841,9 @@
                     "behavior": "ma1",
                     "power": 1
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -2749,7 +2753,7 @@
                         98
                     ]
                 },
-                "sender_id": 11,
+                "sender_id": 70,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -2761,7 +2765,9 @@
                     "behavior": "ma1",
                     "power": 2
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -3671,7 +3677,7 @@
                         98
                     ]
                 },
-                "sender_id": 4,
+                "sender_id": 66,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3683,7 +3689,9 @@
                     "behavior": "ma1",
                     "power": 3
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -4593,7 +4601,7 @@
                         98
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 53,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -4605,7 +4613,9 @@
                     "behavior": "ma1",
                     "power": 4
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -5515,7 +5525,7 @@
                         98
                     ]
                 },
-                "sender_id": 37,
+                "sender_id": 17,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -5527,7 +5537,9 @@
                     "behavior": "ma1",
                     "power": 5
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 1
             },
             "tests": 100,
             "rounds": 200
@@ -6437,21 +6449,23 @@
                         98
                     ]
                 },
-                "sender_id": 12,
+                "sender_id": 5,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        69
+                        89
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 3
             },
             "tests": 100,
             "rounds": 200
@@ -7361,21 +7375,23 @@
                         98
                     ]
                 },
-                "sender_id": 34,
+                "sender_id": 59,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        10
+                        95
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 1
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 3
             },
             "tests": 100,
             "rounds": 200
@@ -8285,21 +8301,23 @@
                         98
                     ]
                 },
-                "sender_id": 37,
+                "sender_id": 42,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        2
+                        41
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 2
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 3
             },
             "tests": 100,
             "rounds": 200
@@ -9209,21 +9227,23 @@
                         98
                     ]
                 },
-                "sender_id": 88,
+                "sender_id": 80,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        15
+                        47
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 3
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 3
             },
             "tests": 100,
             "rounds": 200
@@ -10133,21 +10153,23 @@
                         98
                     ]
                 },
-                "sender_id": 62,
+                "sender_id": 48,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        66
+                        96
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 4
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 3
             },
             "tests": 100,
             "rounds": 200
@@ -11057,22 +11079,24 @@
                         98
                     ]
                 },
-                "sender_id": 18,
+                "sender_id": 78,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        78,
-                        12
+                        13,
+                        51
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 5
             },
             "tests": 100,
             "rounds": 200
@@ -11982,22 +12006,24 @@
                         98
                     ]
                 },
-                "sender_id": 92,
+                "sender_id": 39,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        67,
-                        77
+                        12,
+                        32
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 1
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 5
             },
             "tests": 100,
             "rounds": 200
@@ -12907,22 +12933,24 @@
                         98
                     ]
                 },
-                "sender_id": 87,
+                "sender_id": 18,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        6,
-                        84
+                        72,
+                        30
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 2
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 5
             },
             "tests": 100,
             "rounds": 200
@@ -13832,22 +13860,24 @@
                         98
                     ]
                 },
-                "sender_id": 81,
+                "sender_id": 12,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        37,
-                        88
+                        21,
+                        18
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 3
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 5
             },
             "tests": 100,
             "rounds": 200
@@ -14757,23 +14787,25 @@
                         98
                     ]
                 },
-                "sender_id": 90,
+                "sender_id": 12,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        63,
-                        1,
-                        9
+                        30,
+                        56,
+                        81
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 7
             },
             "tests": 100,
             "rounds": 200
@@ -15683,23 +15715,25 @@
                         98
                     ]
                 },
-                "sender_id": 0,
+                "sender_id": 40,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        49,
-                        46,
-                        62
+                        53,
+                        28,
+                        50
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 1
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 7
             },
             "tests": 100,
             "rounds": 200
@@ -16609,23 +16643,25 @@
                         98
                     ]
                 },
-                "sender_id": 10,
+                "sender_id": 94,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        97,
-                        0,
-                        72
+                        11,
+                        10,
+                        37
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 2
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 7
             },
             "tests": 100,
             "rounds": 200
@@ -17535,24 +17571,26 @@
                         98
                     ]
                 },
-                "sender_id": 8,
+                "sender_id": 29,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        51,
-                        35,
-                        55,
-                        33
+                        66,
+                        46,
+                        87,
+                        5
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 9
             },
             "tests": 100,
             "rounds": 200
@@ -18462,24 +18500,26 @@
                         98
                     ]
                 },
-                "sender_id": 16,
+                "sender_id": 37,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        6,
-                        37,
-                        92,
-                        44
+                        10,
+                        94,
+                        70,
+                        30
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 1
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 9
             },
             "tests": 100,
             "rounds": 200
@@ -19389,25 +19429,27 @@
                         98
                     ]
                 },
-                "sender_id": 15,
+                "sender_id": 44,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        86,
-                        34,
-                        81,
-                        39,
-                        31
+                        64,
+                        89,
+                        60,
+                        33,
+                        97
                     ]
                 },
                 "messageAdversary": {
                     "behavior": "ma1",
                     "power": 0
                 },
-                "algorithm": "bracha"
+                "algorithm": "bracha",
+                "print": false,
+                "delivery_threshold": 11
             },
             "tests": 100,
             "rounds": 200

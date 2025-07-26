@@ -6,6 +6,7 @@ import ast
 import re
 
 path_base_topologies = pathlib.Path(__file__).parent / "base_topologies"
+path_bracha_topologies = pathlib.Path(__file__).parent / "topologies_bracha"
 path_ma1 = pathlib.Path(__file__).parent / "topologies_<alg>" / "MA1_topologies"
 path_ma2 = pathlib.Path(__file__).parent / "topologies_<alg>" / "MA2_topologies"
 path_ma3 = pathlib.Path(__file__).parent / "topologies_<alg>" / "MA3_topologies"
@@ -27,7 +28,7 @@ def getRandomNode(start, end):
     x = random.randint(start,end)
     return x
 
-def getRandomCorrectNodes(quantity: int=0, start: int=0, end: int=0, sender:int=0, nodes_to_avoid: list=[]):
+def getRandomNodes(quantity: int=0, start: int=0, end: int=0, sender:int=0, nodes_to_avoid: list=[]):
     byz_list = []
     while len(byz_list)<quantity:
         x = random.randint(start,end)
@@ -109,19 +110,11 @@ def getOutputFile(net_name, ma_type, byz_num, ma_power, algorithm):
     os.makedirs(path / name / category / algorithm, exist_ok=True)
     return str(output_file_name) 
 
-def changeAlg(net_json, alg):
-    if (alg=="bracha"):
-        net_json["experiments"][0]["logFile"] = net_json["experiments"][0]["logFile"].replace("opodis","bracha")
-    else:
-        net_json["experiments"][0]["logFile"] = net_json["experiments"][0]["logFile"].replace("bracha","opodis")
-    topology = net_json["experiments"][0]["topology"]
-    topology["algorithm"] = alg
-    return net_json
 
 
-def generateRandomNetMA1(net_name, byz_number, ma_power, algorithm: str = "bracha"):
+def generateRandomNetMA1(net_name, byz_number, ma_power, delivery_threshold, algorithm: str = "bracha"):
     net_json = getNetwork(net_name)
-    topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
+    topology_name = net_name.split("/")[-1].replace(".json","")
     
     net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma1", byz_number, ma_power, algorithm)
@@ -131,6 +124,8 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, algorithm: str = "brach
     topology = net_json["experiments"][0]["topology"]
     
     topology["algorithm"] = algorithm
+    topology["print"] = False
+    topology["delivery_threshold"] = delivery_threshold
     topology["list"] = add_self_loop_edge(topology["list"])
     n = topology["totalPeers"]
     ma_section = topology["messageAdversary"]
@@ -141,7 +136,7 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, algorithm: str = "brach
     topology["msgToSend"] = 1
     
     byz_section["total"] = byz_number
-    byz_nodes_list = getRandomCorrectNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
+    byz_nodes_list = getRandomNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
     byz_section["list"] = byz_nodes_list
     byz_section["type"] = "userList"
     
@@ -151,9 +146,9 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, algorithm: str = "brach
     return net_json["experiments"][0]
 
 
-def generateRandomNetMA2(net_name, byz_number, ma_power, algorithm: str = "bracha"):
+def generateRandomNetMA2(net_name, byz_number, ma_power, delivery_threshold, algorithm: str = "bracha"):
     net_json = getNetwork(net_name)
-    topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
+    topology_name = net_name.split("/")[-1].replace(".json","")
     
     net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma2", byz_number, ma_power, algorithm)
@@ -162,6 +157,8 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, algorithm: str = "brach
     
     topology = net_json["experiments"][0]["topology"]
     topology["algorithm"] = algorithm
+    topology["print"] = False
+    topology["delivery_threshold"] = delivery_threshold
     topology["list"] = add_self_loop_edge(topology["list"])
     n = topology["totalPeers"]
     ma_section = topology["messageAdversary"]
@@ -172,13 +169,13 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, algorithm: str = "brach
     topology["msgToSend"] = 1
     
     byz_section["total"] = byz_number
-    byz_nodes_list = getRandomCorrectNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
+    byz_nodes_list = getRandomNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
     byz_section["list"] = byz_nodes_list
     byz_section["type"] = "userList"
     
     ma_section["behavior"] = "ma2"
     ma_section["power"] = ma_power
-    ma_isolated_nodes = getRandomCorrectNodes(quantity=ma_power, start=0, end=n-1, sender=sender_id, nodes_to_avoid=byz_nodes_list)
+    ma_isolated_nodes = getRandomNodes(quantity=ma_power, start=0, end=n-1, sender=sender_id, nodes_to_avoid=byz_nodes_list)
     ma_section["nodes_blocked"] = ma_isolated_nodes
     
     topology["list"] = isolateNodes(topology["list"],ma_isolated_nodes)
@@ -186,9 +183,9 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, algorithm: str = "brach
     return net_json["experiments"][0]
 
 
-def generateRandomNetMA3(net_name, byz_number, ma_power, algorithm: str = "bracha"):
+def generateRandomNetMA3(net_name, byz_number, ma_power, delivery_threshold, algorithm: str = "bracha"):
     net_json = getNetwork(net_name)
-    topology_name = net_name.split("/base_topologies/")[1].replace(".json","")
+    topology_name = net_name.split("/")[-1].replace(".json","")
     
     net_json["experiments"][0]["algorithm"] = f"{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma3", byz_number, ma_power, algorithm)
@@ -197,6 +194,8 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, algorithm: str = "brach
     
     topology = net_json["experiments"][0]["topology"]
     topology["algorithm"] = algorithm
+    topology["print"] = False
+    topology["delivery_threshold"] = delivery_threshold
     topology["list"] = add_self_loop_edge(topology["list"])
     n = topology["totalPeers"]
     ma_section = topology["messageAdversary"]
@@ -207,7 +206,7 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, algorithm: str = "brach
     topology["msgToSend"] = 1
     
     byz_section["total"] = byz_number
-    byz_nodes_list = getRandomCorrectNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
+    byz_nodes_list = getRandomNodes(quantity=byz_number, start=0, end=n-1, sender=sender_id, nodes_to_avoid=[])
     byz_section["list"] = byz_nodes_list
     byz_section["type"] = "userList"
     

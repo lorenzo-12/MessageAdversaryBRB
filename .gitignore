@@ -26,3 +26,12 @@ quantas/TrailPeer/*Log.json
 quantas/TrailPeer/*logs*/**/*
 quantas/TrailPeer/*Logs*/**/*
 results_img_3d/
+
+run_experiments_cluster.py
+run.py
+run_status.py
+bash_files/
+server_output/*
+
+*.stderr
+*.stdout

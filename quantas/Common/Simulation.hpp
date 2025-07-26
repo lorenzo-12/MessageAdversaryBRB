@@ -264,7 +264,7 @@ namespace quantas {
 				LogWriter::instance()->setLog(cout); // If the file doesn't open set the log file to the console
 			}
 			else {
-				cout << "Log file opened at path: " << file << endl;
+				//cout << "Log file opened at path: " << file << endl;
 				LogWriter::instance()->setLog(out); // Otherwise set the log file to the user given file
 			}
 		}
