@@ -70,6 +70,7 @@ namespace quantas{
     class BRBPeer : public Peer<ExampleMessage>{
     public:
 
+        //common
         bool print = false;
         long senderId;
         int msgToSend = 0;
@@ -81,9 +82,13 @@ namespace quantas{
         string algorithm = "bracha";
         map<string,vector<int>>* termination_time;
 
-        //common
         bool delivered = false;
         vector<string> received_msgs = {};
+        vector<string> received_msgs_send = {};
+        vector<string> received_msgs_echo = {};
+        vector<string> received_msgs_ready = {};
+        vector<string> received_msgs_forward = {};
+        vector<string> received_msgs_bundle = {};
 
         //bracha
         int echo_threshold = 0;
@@ -117,11 +122,11 @@ namespace quantas{
         // perform one step of the Algorithm with the messages in inStream
         void                    performComputation ();
         void                    byzantineBehavior();
-        void                    rc_broadcast(ExampleMessage msg);
+        void                    rc_broadcast(ExampleMessage msg, vector<interfaceId> excluded = {});
+        void                    propagate(ExampleMessage msg, interfaceId senderId = -1);  
 
         //bracha
         void                    bracha();
-        void                    bracha_propagate(ExampleMessage msg);
         void                    bracha_rc_deliver(ExampleMessage msg);
         void                    bracha_broadcast(string val);
         void                    bracha_deliver(string val);
@@ -132,7 +137,6 @@ namespace quantas{
 
         //opodis
         void                    opodis();
-        void                    opodis_propagate(ExampleMessage msg);
         void                    opodis_rc_deliver(ExampleMessage msg);
         void                    opodis_broadcast(string val);
         void                    opodis_deliver(string val);

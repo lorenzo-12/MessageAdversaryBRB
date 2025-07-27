@@ -38,14 +38,14 @@ with open(path_ma1/file,"r") as f:
     total_tests = 100*len(data["experiments"])
 
 
-# reset files to empty
-for file in files:
-    f = open("results_status/"+file, "w+")
-
-algorithm = "opodis"
+algorithm = "opodis_1"
 processes = []
 
-for ma_type in [3]:
+for ma_type in [1,2,3]:
+    # reset files to empty
+    for file in files:
+        f = open("results_status/"+file, "w+")
+    
     for i, exp in enumerate(experiments):
         final_file = ""
         check = False
@@ -70,33 +70,33 @@ for ma_type in [3]:
         processes.append(p)
         time.sleep(3)  # slight delay to avoid potential race conditions
 
-# Monitor and display progress until all processes finish
-while True:
-    # count completed processes
-    term_proc = sum(1 for p in processes if p.poll() is not None)
-    # clear terminal screen
-    os.system('cls' if os.name == 'nt' else 'clear')
+    # Monitor and display progress until all processes finish
+    while True:
+        # count completed processes
+        term_proc = sum(1 for p in processes if p.poll() is not None)
+        # clear terminal screen
+        os.system('cls' if os.name == 'nt' else 'clear')
 
-    # build progress text
-    text = ""
-    for file in files:
-        try:
-            with open("results_status/"+file, "r") as f:
-                lines = f.readlines()
-        except FileNotFoundError:
-            lines = []
-        x = len(lines)
-        perc = min(int(x * 100 / total_tests),100)
-        y = len(str(total_tests))
-        text += f"[{'#' * perc:<100}]{perc:>3}%  {x:>{y}}/{total_tests}   {file}\n"
-    print(text, end="", flush=True)
+        # build progress text
+        text = ""
+        for file in files:
+            try:
+                with open("results_status/"+file, "r") as f:
+                    lines = f.readlines()
+            except FileNotFoundError:
+                lines = []
+            x = len(lines)
+            perc = min(int(x * 100 / total_tests),100)
+            y = len(str(total_tests))
+            text += f"[{'#' * perc:<100}]{perc:>3}%  {x:>{y}}/{total_tests}   {file}\n"
+        print(text, end="", flush=True)
 
-    # exit when done
-    if term_proc >= len(processes):
-        break
+        # exit when done
+        if term_proc >= len(processes):
+            break
 
-    time.sleep(1)
+        time.sleep(1)
 
-# wait for all processes to ensure clean exit
-for p in processes:
-    p.wait()
+    # wait for all processes to ensure clean exit
+    for p in processes:
+        p.wait()

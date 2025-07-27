@@ -260,7 +260,7 @@ namespace quantas {
 			//std::cout << "[DEBUG] Attempting to open log file at path: " << file << std::endl;
 			out.open(file);
 			if (out.fail()) {
-				cout << "Error: could not open file " << file << ". Writing to console" << endl;
+				//cout << "Error: could not open file " << file << ". Writing to console" << endl;
 				LogWriter::instance()->setLog(cout); // If the file doesn't open set the log file to the console
 			}
 			else {
@@ -272,6 +272,9 @@ namespace quantas {
 		std::chrono::time_point<std::chrono::high_resolution_clock> startTime, endTime; // chrono time points
    		std::chrono::duration<double> duration; // chrono time interval
 		startTime = std::chrono::high_resolution_clock::now();
+
+		std::chrono::time_point<std::chrono::high_resolution_clock> startTimeTest, endTimeTest; // chrono time points
+   		std::chrono::duration<double> durationTest; // chrono time interval
 
 		int _threadCount = thread::hardware_concurrency(); // By default, use as many hardware cores as possible
 		if (config.contains("threadCount") && config["threadCount"] > 0) {
@@ -299,6 +302,7 @@ namespace quantas {
 
 		BS::thread_pool pool(_threadCount);
 		for (int i = 0; i < config["tests"]; i++) {
+			startTimeTest = std::chrono::high_resolution_clock::now();
 			LogWriter::instance()->setTest(i);
 
 			// Configure the delay properties and initial topology of the network
@@ -356,7 +360,10 @@ namespace quantas {
 			test.computeInfo();
 			testInfoDict[std::to_string(i)] = test;
 
-			cout << "End test " << i << "  tot_bits_sent: " << totalBitSent << endl; 
+			endTimeTest = std::chrono::high_resolution_clock::now();
+   			durationTest = endTimeTest - startTimeTest;
+
+			cout << "End test " << i << "  tot_bits_sent: " << totalBitSent << "   time:" << durationTest.count() << endl; 
 			
 			
 			/* cout << "totalMsgSent: " << totalMsgSent << endl;

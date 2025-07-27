@@ -135,10 +135,10 @@ namespace quantas{
         void                               unicastTo             (message msg, long dest);
         void                               randomMulticast       (message msg);
         int                                broadcast             (message msg, vector<long> node_list);
-        int                                broadcast_MA          (message msg);
-        int                                broadcast_MA1         (message msg);
-        int                                broadcast_MA2         (message msg);
-        int                                broadcast_MA3         (message msg);
+        int                                broadcast_MA          (message msg, vector<long> excluded = {});
+        int                                broadcast_MA1         (message msg, vector<long> excluded = {});
+        int                                broadcast_MA2         (message msg, vector<long> excluded = {});
+        int                                broadcast_MA3         (message msg, vector<long> excluded = {});
 
     public: 
         NetworkInterface                                         ();
@@ -226,18 +226,22 @@ namespace quantas{
 
     // Send to all neighbors except those in the ids vector
     template <class message>
-    int NetworkInterface<message>::broadcast_MA(message msg){
-        if (_ma_type == "ma1") return broadcast_MA1(msg);
-        else if (_ma_type == "ma2") return broadcast_MA2(msg);
-        else if (_ma_type == "ma3") return broadcast_MA3(msg);
+    int NetworkInterface<message>::broadcast_MA(message msg, vector<long> excluded){
+        if (_ma_type == "ma1") return broadcast_MA1(msg, excluded);
+        else if (_ma_type == "ma2") return broadcast_MA2(msg, excluded);
+        else if (_ma_type == "ma3") return broadcast_MA3(msg, excluded);
         else return 0;
     }
 
     // Send to all neighbors except those in the ids vector
     template <class message>
-    int NetworkInterface<message>::broadcast_MA1(message msg){
+    int NetworkInterface<message>::broadcast_MA1(message msg, vector<long> excluded){
 
         vector<interfaceId> remainingNeighbors = _neighbors;
+        // remove the peers from the excluded list
+        for (auto peer : excluded){
+            remainingNeighbors.erase(std::remove(remainingNeighbors.begin(), remainingNeighbors.end(), peer), remainingNeighbors.end()); 
+        }
 
         // Sample d adversarial neighbors from _neighbors
         vector<interfaceId> blocked;
@@ -260,7 +264,7 @@ namespace quantas{
 
     // Send to all neighbors except those in the ids vector
     template <class message>
-    int NetworkInterface<message>::broadcast_MA2(message msg){
+    int NetworkInterface<message>::broadcast_MA2(message msg, vector<long> excluded){
         
         // if msg.dest in neighbors --> send only to dest
         auto it = find(_neighbors.begin(), _neighbors.end(), msg.destination);
@@ -269,16 +273,16 @@ namespace quantas{
             return 1;
         }
 
-        // else broadcast to all my neighbors except the original sender (if it is not me)
         vector<interfaceId> remainingNeighbors = _neighbors;
-        if (id() != msg.source){
-            remainingNeighbors.erase(std::remove(remainingNeighbors.begin(), remainingNeighbors.end(), msg.source), remainingNeighbors.end()); 
+        // remove the peers from the excluded list
+        for (auto peer : excluded){
+            remainingNeighbors.erase(std::remove(remainingNeighbors.begin(), remainingNeighbors.end(), peer), remainingNeighbors.end()); 
         }
         return broadcast(msg, remainingNeighbors);
     }
 
     template <class message>
-    int NetworkInterface<message>::broadcast_MA3(message msg){
+    int NetworkInterface<message>::broadcast_MA3(message msg, vector<long> excluded){
         // if msg.dest in neighbors --> send only to dest
         auto it = find(_neighbors.begin(), _neighbors.end(), msg.destination);
         if (it != _neighbors.end()){
@@ -288,8 +292,9 @@ namespace quantas{
 
         // else broadcast to all my neighbors except the original sender (if it is not me)
         vector<interfaceId> remainingNeighbors = _neighbors;
-        if (id() != msg.source){
-            remainingNeighbors.erase(std::remove(remainingNeighbors.begin(), remainingNeighbors.end(), msg.source), remainingNeighbors.end()); 
+        // remove the peers from the excluded list
+        for (auto peer : excluded){
+            remainingNeighbors.erase(std::remove(remainingNeighbors.begin(), remainingNeighbors.end(), peer), remainingNeighbors.end()); 
         }
         return broadcast(msg, remainingNeighbors);
     }

@@ -20,10 +20,11 @@ PROJECT_DIR := quantas
 #
 
 #-->
-INPUTFILE := /topologies_bracha/MA3_topologies/random_graph_byz_high_conn_n100_k6.json
+INPUTFILE := /topologies_opodis_1/MA1_topologies/random_graph_byz_high_conn_n100_k6.json
 #<--
 
 #INPUTFILE := /ExampleInputBig.json
+#INPUTFILE := /ExampleInput.json
 ALGFILE := BRBPeer
 #ALGFILE := ExamplePeer
 

@@ -28,14 +28,16 @@
                     "list": []
                 },
                 "messageAdversary": {
-                    "behavior": "ma3",
-                    "power": 0
+                    "behavior": "ma2",
+                    "power": 0,
+                    "nodes_blocked": []
                 },
-                "algorithm": "bracha"
+                "algorithm": "opodis_1",
+                "print": true,
+                "delivery_threshold": 1
             },
             "tests": 1,
-            "rounds": 30,
-            "print": false
+            "rounds": 20
         }
     ]
 }
