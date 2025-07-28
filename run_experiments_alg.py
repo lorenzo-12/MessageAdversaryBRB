@@ -42,7 +42,7 @@ files = [
 file = os.listdir(path_ma1)[0]
 with open(path_ma1/file,"r") as f:
     data = json.load(f)
-    total_tests = int(data["experiments"][0]["tests"])*len(data["experiments"])
+    total_tests = int(data["experiments"][0]["tests"])*len(data["experiments"])*int(data["experiments"][0]["rounds"])
     
 makefile_text = ""
 with open(path_makefile, "r") as f:
@@ -69,7 +69,7 @@ def modify_line(arg_line, arg_makefile):
 
 processes = []
 
-for ma_type in [1,2,3]:
+for ma_type in [2,3,1]:
     for file in files:
         f = open(f"results_status/{algorithm}_{file}", "w+")
         
@@ -94,7 +94,7 @@ for ma_type in [1,2,3]:
         term_proc = sum(1 for p in processes if p.poll() is not None)
         
         # clear terminal screen
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('clear')
         
         # build progress text
         text = ""
@@ -107,14 +107,14 @@ for ma_type in [1,2,3]:
             x = len(lines)
             perc = min(int(x * 100 / total_tests),100)
             y = len(str(total_tests))
-            text += f"[{'#' * perc:<100}]{perc:>3}%  {x:>{y}}/{total_tests}   {file}\n"
+            text += f"[{'#' * perc:<100}]{perc:>3}%  {x:>{y}}/{total_tests}   {algorithm}_{file}\n"
         print(text, end="\n\n\n", flush=True)
 
         # exit when done
         if term_proc >= len(processes):
             break
 
-        time.sleep(5)
+        time.sleep(2)
 
     # wait for all processes to ensure clean exit
     for p in processes:

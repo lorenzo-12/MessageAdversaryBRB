@@ -23,7 +23,7 @@ PROJECT_DIR := quantas
 INPUTFILE := /topologies_bracha/MA2_topologies/generalized_wheel_byz_center_n100_k6.json
 #<--
 
-#INPUTFILE := /ExampleInputBig.json
+INPUTFILE := /ExampleInputBig.json
 ALGFILE := BRBPeer
 #ALGFILE := ExamplePeer
 

@@ -23,7 +23,7 @@ PROJECT_DIR := quantas
 INPUTFILE := /topologies_opodis_1/MA1_topologies/random_graph_n100_k6_e600.json
 #<--
 
-#INPUTFILE := /ExampleInputBig.json
+INPUTFILE := /ExampleInputBig.json
 ALGFILE := BRBPeer
 #ALGFILE := ExamplePeer
 
