@@ -294,7 +294,7 @@ namespace quantas {
 		
 		srand(time(0));
 
-		string status_file = config["algorithm"];
+		string status_file = config["outFile"];
 		string end_file = ".txt";
 		string start_file = "results_status/";
 		string file = start_file + status_file + end_file;

@@ -38,7 +38,7 @@ with open(path_ma1/file,"r") as f:
     total_tests = 100*len(data["experiments"])
 
 
-algorithm = "opodis_1"
+algorithm = "bracha"
 processes = []
 
 for ma_type in [1,2,3]:

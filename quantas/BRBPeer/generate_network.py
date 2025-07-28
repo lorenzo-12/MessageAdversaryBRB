@@ -1,6 +1,7 @@
 import json 
 import os 
 from utils import *
+from collections import OrderedDict
 
 path_base_topologies = pathlib.Path(__file__).parent / "base_topologies"
 path_bracha_ma1 = pathlib.Path(__file__).parent / "topologies_bracha" / "MA1_topologies"
@@ -18,7 +19,7 @@ def getDeliveryThreshold(algorithm: str, t: int, d: int):
     
     return 2*t+1
 
-            
+desired_order = ["outFile","logFile","tests","rounds","topology","distribution","threadCount"]
 
 def generate_net(algorithm):
 
@@ -150,7 +151,7 @@ def copyNetwork(algorithm):
         with open(out, "w+") as f:
             json.dump(net_json, f, indent=4)
 
-#generate_net("bracha")
+generate_net("bracha")
 copyNetwork("opodis_1")
 copyNetwork("opodis_2t+1")
 

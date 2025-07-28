@@ -1,7 +1,6 @@
 {
     "experiments": [
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -905,7 +904,7 @@
                         98
                     ]
                 },
-                "sender_id": 53,
+                "sender_id": 21,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -922,10 +921,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -1056,6 +1055,7 @@
                     ],
                     "13": [
                         15,
+                        16,
                         17,
                         9,
                         10,
@@ -1085,6 +1085,7 @@
                         19,
                         20,
                         12,
+                        13,
                         14,
                         16
                     ],
@@ -1658,7 +1659,6 @@
                     "80": [
                         81,
                         82,
-                        83,
                         75,
                         76,
                         77,
@@ -1688,7 +1688,6 @@
                         86,
                         78,
                         79,
-                        80,
                         83
                     ],
                     "84": [
@@ -1827,7 +1826,7 @@
                         98
                     ]
                 },
-                "sender_id": 76,
+                "sender_id": 74,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1844,10 +1843,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -2239,7 +2238,6 @@
                     ],
                     "42": [
                         45,
-                        46,
                         47,
                         39,
                         40,
@@ -2277,7 +2275,6 @@
                         48,
                         49,
                         50,
-                        42,
                         43,
                         44,
                         46
@@ -2346,6 +2343,7 @@
                         53
                     ],
                     "54": [
+                        57,
                         58,
                         59,
                         51,
@@ -2375,6 +2373,7 @@
                         60,
                         61,
                         62,
+                        54,
                         55,
                         56,
                         57
@@ -2571,7 +2570,6 @@
                     "79": [
                         81,
                         82,
-                        83,
                         75,
                         76,
                         77,
@@ -2580,6 +2578,7 @@
                     "80": [
                         81,
                         82,
+                        83,
                         75,
                         76,
                         77,
@@ -2608,7 +2607,7 @@
                         85,
                         86,
                         78,
-                        79,
+                        80,
                         83
                     ],
                     "84": [
@@ -2747,7 +2746,7 @@
                         98
                     ]
                 },
-                "sender_id": 62,
+                "sender_id": 64,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -2764,10 +2763,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -2783,6 +2782,7 @@
                         3,
                         4,
                         5,
+                        96,
                         97,
                         98,
                         0
@@ -2933,7 +2933,6 @@
                     ],
                     "17": [
                         18,
-                        19,
                         20,
                         12,
                         13,
@@ -2955,7 +2954,6 @@
                         23,
                         15,
                         16,
-                        17,
                         19
                     ],
                     "20": [
@@ -2968,6 +2966,7 @@
                         20
                     ],
                     "21": [
+                        24,
                         25,
                         26,
                         18,
@@ -2997,6 +2996,7 @@
                         27,
                         28,
                         29,
+                        21,
                         22,
                         23,
                         24
@@ -3184,7 +3184,6 @@
                     "45": [
                         48,
                         49,
-                        50,
                         42,
                         43,
                         44,
@@ -3230,7 +3229,6 @@
                         51,
                         52,
                         53,
-                        45,
                         46,
                         47,
                         50
@@ -3407,6 +3405,7 @@
                         69
                     ],
                     "70": [
+                        72,
                         73,
                         74,
                         66,
@@ -3428,6 +3427,7 @@
                         76,
                         77,
                         69,
+                        70,
                         71,
                         72
                     ],
@@ -3540,7 +3540,6 @@
                         84
                     ],
                     "85": [
-                        87,
                         88,
                         89,
                         81,
@@ -3562,7 +3561,6 @@
                         91,
                         92,
                         84,
-                        85,
                         86,
                         87
                     ],
@@ -3639,6 +3637,7 @@
                         95
                     ],
                     "96": [
+                        0,
                         1,
                         2,
                         93,
@@ -3665,7 +3664,7 @@
                         98
                     ]
                 },
-                "sender_id": 71,
+                "sender_id": 6,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3682,10 +3681,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d4.json",
             "threadCount": 1,
             "distribution": {
@@ -3754,6 +3753,7 @@
                     "6": [
                         9,
                         10,
+                        11,
                         3,
                         4,
                         5,
@@ -3799,6 +3799,7 @@
                         12,
                         13,
                         14,
+                        6,
                         7,
                         8,
                         11
@@ -4022,7 +4023,6 @@
                     "36": [
                         39,
                         40,
-                        41,
                         33,
                         34,
                         35,
@@ -4047,7 +4047,6 @@
                         38
                     ],
                     "39": [
-                        42,
                         43,
                         44,
                         36,
@@ -4068,7 +4067,6 @@
                         42,
                         43,
                         44,
-                        36,
                         37,
                         38,
                         41
@@ -4077,7 +4075,6 @@
                         45,
                         46,
                         47,
-                        39,
                         40,
                         41,
                         42
@@ -4130,6 +4127,7 @@
                     "48": [
                         51,
                         52,
+                        53,
                         45,
                         46,
                         47,
@@ -4164,6 +4162,7 @@
                     ],
                     "52": [
                         54,
+                        55,
                         56,
                         48,
                         49,
@@ -4174,6 +4173,7 @@
                         54,
                         55,
                         56,
+                        48,
                         49,
                         50,
                         53
@@ -4192,6 +4192,7 @@
                         58,
                         59,
                         51,
+                        52,
                         53,
                         55
                     ],
@@ -4286,7 +4287,6 @@
                         65
                     ],
                     "66": [
-                        69,
                         70,
                         71,
                         63,
@@ -4316,7 +4316,6 @@
                         72,
                         73,
                         74,
-                        66,
                         67,
                         68,
                         69
@@ -4368,7 +4367,6 @@
                     ],
                     "75": [
                         78,
-                        79,
                         80,
                         72,
                         73,
@@ -4406,7 +4404,6 @@
                         81,
                         82,
                         83,
-                        75,
                         76,
                         77,
                         79
@@ -4448,6 +4445,7 @@
                         83
                     ],
                     "84": [
+                        87,
                         88,
                         89,
                         81,
@@ -4477,6 +4475,7 @@
                         90,
                         91,
                         92,
+                        84,
                         85,
                         86,
                         87
@@ -4581,7 +4580,7 @@
                         98
                     ]
                 },
-                "sender_id": 70,
+                "sender_id": 2,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -4598,10 +4597,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t0_d5.json",
             "threadCount": 1,
             "distribution": {
@@ -4632,7 +4631,6 @@
                         1
                     ],
                     "2": [
-                        3,
                         4,
                         5,
                         96,
@@ -4646,7 +4644,6 @@
                         8,
                         0,
                         1,
-                        2,
                         3
                     ],
                     "4": [
@@ -4831,6 +4828,7 @@
                     ],
                     "24": [
                         27,
+                        28,
                         29,
                         21,
                         22,
@@ -4868,6 +4866,7 @@
                         30,
                         31,
                         32,
+                        24,
                         25,
                         26,
                         28
@@ -4892,7 +4891,6 @@
                     ],
                     "31": [
                         33,
-                        34,
                         35,
                         27,
                         28,
@@ -4911,6 +4909,7 @@
                     "33": [
                         36,
                         37,
+                        38,
                         30,
                         31,
                         32,
@@ -4921,7 +4920,6 @@
                         37,
                         38,
                         30,
-                        31,
                         32,
                         34
                     ],
@@ -4956,6 +4954,7 @@
                         39,
                         40,
                         41,
+                        33,
                         34,
                         35,
                         38
@@ -5107,6 +5106,7 @@
                     "55": [
                         57,
                         58,
+                        59,
                         51,
                         52,
                         53,
@@ -5144,11 +5144,11 @@
                         61,
                         62,
                         54,
+                        55,
                         56,
                         59
                     ],
                     "60": [
-                        63,
                         64,
                         65,
                         57,
@@ -5178,7 +5178,6 @@
                         66,
                         67,
                         68,
-                        60,
                         61,
                         62,
                         63
@@ -5220,6 +5219,7 @@
                         67
                     ],
                     "68": [
+                        69,
                         70,
                         71,
                         63,
@@ -5233,6 +5233,7 @@
                         74,
                         66,
                         67,
+                        68,
                         69
                     ],
                     "70": [
@@ -5246,7 +5247,6 @@
                     ],
                     "71": [
                         72,
-                        73,
                         74,
                         66,
                         67,
@@ -5268,7 +5268,6 @@
                         77,
                         69,
                         70,
-                        71,
                         73
                     ],
                     "74": [
@@ -5389,7 +5388,6 @@
                         86
                     ],
                     "87": [
-                        90,
                         91,
                         92,
                         84,
@@ -5419,7 +5417,6 @@
                         93,
                         94,
                         95,
-                        87,
                         88,
                         89,
                         90
@@ -5443,6 +5440,7 @@
                         92
                     ],
                     "93": [
+                        96,
                         97,
                         98,
                         90,
@@ -5472,6 +5470,7 @@
                         0,
                         1,
                         2,
+                        93,
                         94,
                         95,
                         96
@@ -5495,7 +5494,7 @@
                         98
                     ]
                 },
-                "sender_id": 20,
+                "sender_id": 48,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -5512,10 +5511,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t1_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -6419,14 +6418,14 @@
                         98
                     ]
                 },
-                "sender_id": 66,
+                "sender_id": 57,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        11
+                        51
                     ]
                 },
                 "messageAdversary": {
@@ -6438,10 +6437,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t1_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -7066,7 +7065,6 @@
                         67
                     ],
                     "68": [
-                        69,
                         70,
                         71,
                         63,
@@ -7080,7 +7078,6 @@
                         74,
                         66,
                         67,
-                        68,
                         69
                     ],
                     "70": [
@@ -7265,6 +7262,7 @@
                     ],
                     "90": [
                         93,
+                        94,
                         95,
                         87,
                         88,
@@ -7302,6 +7300,7 @@
                         96,
                         97,
                         98,
+                        90,
                         91,
                         92,
                         94
@@ -7343,14 +7342,14 @@
                         98
                     ]
                 },
-                "sender_id": 55,
+                "sender_id": 73,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        87
+                        60
                     ]
                 },
                 "messageAdversary": {
@@ -7362,10 +7361,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t1_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -7407,7 +7406,6 @@
                     "3": [
                         6,
                         7,
-                        8,
                         0,
                         1,
                         2,
@@ -7425,7 +7423,6 @@
                     "5": [
                         6,
                         7,
-                        8,
                         0,
                         1,
                         2,
@@ -7453,9 +7450,7 @@
                         9,
                         10,
                         11,
-                        3,
                         4,
-                        5,
                         8
                     ],
                     "9": [
@@ -8127,12 +8122,14 @@
                     "83": [
                         84,
                         85,
+                        86,
                         78,
                         79,
                         80,
                         83
                     ],
                     "84": [
+                        87,
                         88,
                         89,
                         81,
@@ -8155,12 +8152,14 @@
                         89,
                         81,
                         82,
+                        83,
                         86
                     ],
                     "87": [
                         90,
                         91,
                         92,
+                        84,
                         85,
                         86,
                         87
@@ -8265,14 +8264,14 @@
                         98
                     ]
                 },
-                "sender_id": 78,
+                "sender_id": 98,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        64
+                        44
                     ]
                 },
                 "messageAdversary": {
@@ -8284,10 +8283,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t1_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -8318,6 +8317,7 @@
                         1
                     ],
                     "2": [
+                        3,
                         4,
                         5,
                         96,
@@ -8331,6 +8331,7 @@
                         8,
                         0,
                         1,
+                        2,
                         3
                     ],
                     "4": [
@@ -8381,7 +8382,6 @@
                     "9": [
                         12,
                         13,
-                        14,
                         6,
                         7,
                         8,
@@ -8427,7 +8427,6 @@
                         15,
                         16,
                         17,
-                        9,
                         10,
                         11,
                         14
@@ -8525,7 +8524,6 @@
                     "25": [
                         27,
                         28,
-                        29,
                         21,
                         22,
                         23,
@@ -8563,7 +8561,6 @@
                         31,
                         32,
                         24,
-                        25,
                         26,
                         29
                     ],
@@ -8876,7 +8873,6 @@
                     "64": [
                         66,
                         67,
-                        68,
                         60,
                         61,
                         62,
@@ -8914,7 +8910,6 @@
                         70,
                         71,
                         63,
-                        64,
                         65,
                         68
                     ],
@@ -8948,6 +8943,7 @@
                     "72": [
                         75,
                         76,
+                        77,
                         69,
                         70,
                         71,
@@ -8993,6 +8989,7 @@
                         78,
                         79,
                         80,
+                        72,
                         73,
                         74,
                         77
@@ -9009,6 +9006,7 @@
                     "79": [
                         81,
                         82,
+                        83,
                         75,
                         76,
                         77,
@@ -9046,6 +9044,7 @@
                         85,
                         86,
                         78,
+                        79,
                         80,
                         83
                     ],
@@ -9185,14 +9184,14 @@
                         98
                     ]
                 },
-                "sender_id": 92,
+                "sender_id": 14,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        49
+                        75
                     ]
                 },
                 "messageAdversary": {
@@ -9204,10 +9203,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t1_d4.json",
             "threadCount": 1,
             "distribution": {
@@ -9292,6 +9291,7 @@
                         7
                     ],
                     "8": [
+                        9,
                         10,
                         11,
                         3,
@@ -9300,10 +9300,12 @@
                         8
                     ],
                     "9": [
+                        12,
                         13,
                         14,
                         6,
                         7,
+                        8,
                         9
                     ],
                     "10": [
@@ -9328,6 +9330,7 @@
                         15,
                         16,
                         17,
+                        9,
                         10,
                         11,
                         12
@@ -9369,6 +9372,7 @@
                         16
                     ],
                     "17": [
+                        18,
                         19,
                         20,
                         12,
@@ -9382,6 +9386,7 @@
                         23,
                         15,
                         16,
+                        17,
                         18
                     ],
                     "19": [
@@ -9430,7 +9435,6 @@
                         23
                     ],
                     "24": [
-                        27,
                         28,
                         29,
                         21,
@@ -9460,7 +9464,6 @@
                         30,
                         31,
                         32,
-                        24,
                         25,
                         26,
                         27
@@ -9530,7 +9533,6 @@
                     ],
                     "35": [
                         36,
-                        37,
                         38,
                         30,
                         31,
@@ -9549,10 +9551,8 @@
                     "37": [
                         39,
                         40,
-                        41,
                         33,
                         34,
-                        35,
                         37
                     ],
                     "38": [
@@ -9587,7 +9587,6 @@
                         43,
                         44,
                         36,
-                        37,
                         38,
                         41
                     ],
@@ -9989,7 +9988,7 @@
                     ],
                     "86": [
                         87,
-                        89,
+                        88,
                         81,
                         82,
                         83,
@@ -10010,6 +10009,7 @@
                         92,
                         84,
                         85,
+                        86,
                         88
                     ],
                     "89": [
@@ -10018,7 +10018,6 @@
                         92,
                         84,
                         85,
-                        86,
                         89
                     ],
                     "90": [
@@ -10103,14 +10102,14 @@
                         98
                     ]
                 },
-                "sender_id": 64,
+                "sender_id": 95,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        5
+                        65
                     ]
                 },
                 "messageAdversary": {
@@ -10122,10 +10121,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t2_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -11029,15 +11028,15 @@
                         98
                     ]
                 },
-                "sender_id": 27,
+                "sender_id": 36,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        40,
-                        97
+                        48,
+                        33
                     ]
                 },
                 "messageAdversary": {
@@ -11049,10 +11048,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t2_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -11481,6 +11480,7 @@
                     "46": [
                         48,
                         49,
+                        50,
                         42,
                         43,
                         44,
@@ -11518,6 +11518,7 @@
                         52,
                         53,
                         45,
+                        46,
                         47,
                         50
                     ],
@@ -11677,7 +11678,6 @@
                     "68": [
                         69,
                         70,
-                        71,
                         63,
                         64,
                         65,
@@ -11707,7 +11707,6 @@
                         74,
                         66,
                         67,
-                        68,
                         71
                     ],
                     "72": [
@@ -11954,15 +11953,15 @@
                         98
                     ]
                 },
-                "sender_id": 33,
+                "sender_id": 39,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        54,
-                        43
+                        46,
+                        13
                     ]
                 },
                 "messageAdversary": {
@@ -11974,10 +11973,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t2_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -12460,7 +12459,6 @@
                     "52": [
                         54,
                         55,
-                        56,
                         48,
                         49,
                         50,
@@ -12498,7 +12496,6 @@
                         58,
                         59,
                         51,
-                        52,
                         53,
                         56
                     ],
@@ -12550,6 +12547,7 @@
                     "62": [
                         63,
                         64,
+                        65,
                         57,
                         58,
                         59,
@@ -12579,6 +12577,7 @@
                         68,
                         60,
                         61,
+                        62,
                         65
                     ],
                     "66": [
@@ -12690,6 +12689,7 @@
                         77
                     ],
                     "78": [
+                        81,
                         82,
                         83,
                         75,
@@ -12719,6 +12719,7 @@
                         84,
                         85,
                         86,
+                        78,
                         79,
                         80,
                         81
@@ -12780,7 +12781,6 @@
                     "88": [
                         90,
                         91,
-                        92,
                         84,
                         85,
                         86,
@@ -12818,7 +12818,6 @@
                         94,
                         95,
                         87,
-                        88,
                         89,
                         92
                     ],
@@ -12877,15 +12876,15 @@
                         98
                     ]
                 },
-                "sender_id": 33,
+                "sender_id": 27,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        3,
-                        30
+                        85,
+                        65
                     ]
                 },
                 "messageAdversary": {
@@ -12897,10 +12896,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t2_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -13086,7 +13085,6 @@
                     "19": [
                         21,
                         22,
-                        23,
                         15,
                         16,
                         17,
@@ -13124,7 +13122,6 @@
                         25,
                         26,
                         18,
-                        19,
                         20,
                         23
                     ],
@@ -13239,6 +13236,7 @@
                     "36": [
                         39,
                         40,
+                        41,
                         33,
                         34,
                         35,
@@ -13273,7 +13271,6 @@
                     ],
                     "40": [
                         42,
-                        43,
                         44,
                         36,
                         37,
@@ -13284,6 +13281,7 @@
                         42,
                         43,
                         44,
+                        36,
                         37,
                         38,
                         41
@@ -13299,9 +13297,9 @@
                     ],
                     "43": [
                         45,
+                        46,
                         47,
                         39,
-                        40,
                         41,
                         43
                     ],
@@ -13328,6 +13326,7 @@
                         49,
                         50,
                         42,
+                        43,
                         44,
                         46
                     ],
@@ -13640,7 +13639,6 @@
                     "81": [
                         84,
                         85,
-                        86,
                         78,
                         79,
                         80,
@@ -13686,7 +13684,6 @@
                         87,
                         88,
                         89,
-                        81,
                         82,
                         83,
                         86
@@ -13764,6 +13761,7 @@
                         94
                     ],
                     "95": [
+                        96,
                         97,
                         98,
                         90,
@@ -13777,6 +13775,7 @@
                         2,
                         93,
                         94,
+                        95,
                         96
                     ],
                     "97": [
@@ -13798,15 +13797,15 @@
                         98
                     ]
                 },
-                "sender_id": 42,
+                "sender_id": 19,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        39,
-                        51
+                        66,
+                        47
                     ]
                 },
                 "messageAdversary": {
@@ -13818,10 +13817,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t3_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -14725,16 +14724,16 @@
                         98
                     ]
                 },
-                "sender_id": 51,
+                "sender_id": 89,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        28,
-                        44,
-                        24
+                        96,
+                        85,
+                        22
                     ]
                 },
                 "messageAdversary": {
@@ -14746,10 +14745,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t3_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -14907,7 +14906,6 @@
                     ],
                     "16": [
                         18,
-                        19,
                         20,
                         12,
                         13,
@@ -14937,7 +14935,6 @@
                         22,
                         23,
                         15,
-                        16,
                         17,
                         19
                     ],
@@ -15266,6 +15263,7 @@
                         55
                     ],
                     "56": [
+                        57,
                         58,
                         59,
                         51,
@@ -15279,6 +15277,7 @@
                         62,
                         54,
                         55,
+                        56,
                         57
                     ],
                     "58": [
@@ -15651,16 +15650,16 @@
                         98
                     ]
                 },
-                "sender_id": 3,
+                "sender_id": 34,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        90,
-                        43,
-                        41
+                        16,
+                        89,
+                        49
                     ]
                 },
                 "messageAdversary": {
@@ -15672,10 +15671,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t3_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -15715,6 +15714,7 @@
                         2
                     ],
                     "3": [
+                        6,
                         7,
                         8,
                         0,
@@ -15744,6 +15744,7 @@
                         9,
                         10,
                         11,
+                        3,
                         4,
                         5,
                         6
@@ -15778,7 +15779,6 @@
                     "10": [
                         12,
                         13,
-                        14,
                         6,
                         7,
                         8,
@@ -15816,7 +15816,6 @@
                         16,
                         17,
                         9,
-                        10,
                         11,
                         14
                     ],
@@ -15958,7 +15957,6 @@
                     "30": [
                         33,
                         34,
-                        35,
                         27,
                         28,
                         29,
@@ -16004,7 +16002,6 @@
                         36,
                         37,
                         38,
-                        30,
                         31,
                         32,
                         35
@@ -16523,6 +16520,7 @@
                         92
                     ],
                     "93": [
+                        96,
                         97,
                         98,
                         90,
@@ -16552,6 +16550,7 @@
                         0,
                         1,
                         2,
+                        93,
                         94,
                         95,
                         96
@@ -16575,16 +16574,16 @@
                         98
                     ]
                 },
-                "sender_id": 83,
+                "sender_id": 69,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        29,
-                        72,
-                        3
+                        61,
+                        40,
+                        41
                     ]
                 },
                 "messageAdversary": {
@@ -16596,10 +16595,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t4_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -17503,17 +17502,17 @@
                         98
                     ]
                 },
-                "sender_id": 53,
+                "sender_id": 87,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        18,
-                        45,
-                        72,
-                        93
+                        34,
+                        92,
+                        46,
+                        66
                     ]
                 },
                 "messageAdversary": {
@@ -17525,10 +17524,10 @@
                 "delivery_threshold": 9
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t4_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -18047,7 +18046,6 @@
                     "56": [
                         57,
                         58,
-                        59,
                         51,
                         52,
                         53,
@@ -18077,7 +18075,6 @@
                         62,
                         54,
                         55,
-                        56,
                         59
                     ],
                     "60": [
@@ -18164,6 +18161,7 @@
                     "69": [
                         72,
                         73,
+                        74,
                         66,
                         67,
                         68,
@@ -18209,6 +18207,7 @@
                         75,
                         76,
                         77,
+                        69,
                         70,
                         71,
                         74
@@ -18430,17 +18429,17 @@
                         98
                     ]
                 },
-                "sender_id": 56,
+                "sender_id": 90,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        0,
-                        75,
-                        84,
-                        79
+                        25,
+                        52,
+                        80,
+                        97
                     ]
                 },
                 "messageAdversary": {
@@ -18452,10 +18451,10 @@
                 "delivery_threshold": 9
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         },
         {
-            "algorithm": "multipartite_wheel_n99_k6",
             "logFile": "results/MA3/multipartite_wheel/n99_k6/bracha/t5_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -19359,18 +19358,18 @@
                         98
                     ]
                 },
-                "sender_id": 53,
+                "sender_id": 73,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        88,
-                        11,
-                        3,
-                        42,
-                        68
+                        24,
+                        93,
+                        53,
+                        32,
+                        12
                     ]
                 },
                 "messageAdversary": {
@@ -19382,7 +19381,8 @@
                 "delivery_threshold": 11
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_multipartite_wheel_n99_k6"
         }
     ]
 }

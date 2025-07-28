@@ -1,7 +1,6 @@
 {
     "experiments": [
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -1314,7 +1313,7 @@
                         99
                     ]
                 },
-                "sender_id": 63,
+                "sender_id": 2,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1331,10 +1330,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -1391,7 +1390,6 @@
                         2
                     ],
                     "3": [
-                        10,
                         26,
                         35,
                         37,
@@ -1472,7 +1470,6 @@
                         9
                     ],
                     "10": [
-                        3,
                         14,
                         27,
                         50,
@@ -1554,6 +1551,7 @@
                         9,
                         20,
                         26,
+                        43,
                         58,
                         75,
                         85,
@@ -1912,6 +1910,7 @@
                     "43": [
                         0,
                         8,
+                        16,
                         19,
                         23,
                         41,
@@ -2645,7 +2644,7 @@
                         99
                     ]
                 },
-                "sender_id": 91,
+                "sender_id": 70,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -2662,10 +2661,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -3042,7 +3041,6 @@
                         55,
                         62,
                         77,
-                        88,
                         89,
                         96,
                         97,
@@ -3163,7 +3161,6 @@
                         31,
                         57,
                         81,
-                        85,
                         90,
                         95,
                         36
@@ -3494,6 +3491,7 @@
                         42,
                         58,
                         66,
+                        70,
                         61
                     ],
                     "62": [
@@ -3605,6 +3603,7 @@
                         42,
                         49,
                         53,
+                        61,
                         63,
                         83,
                         70
@@ -3797,7 +3796,6 @@
                         16,
                         32,
                         33,
-                        36,
                         50,
                         63,
                         65,
@@ -3830,7 +3828,6 @@
                     "88": [
                         9,
                         25,
-                        27,
                         47,
                         53,
                         55,
@@ -3876,6 +3873,7 @@
                         45,
                         62,
                         92,
+                        95,
                         91
                     ],
                     "92": [
@@ -3919,6 +3917,7 @@
                         68,
                         89,
                         90,
+                        91,
                         99,
                         95
                     ],
@@ -3974,7 +3973,7 @@
                         99
                     ]
                 },
-                "sender_id": 0,
+                "sender_id": 24,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3991,10 +3990,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -4057,7 +4056,6 @@
                         37,
                         54,
                         56,
-                        59,
                         62,
                         81,
                         94,
@@ -4066,6 +4064,7 @@
                     ],
                     "4": [
                         9,
+                        24,
                         33,
                         36,
                         39,
@@ -4189,7 +4188,6 @@
                         54,
                         56,
                         61,
-                        79,
                         83,
                         84,
                         14
@@ -4249,7 +4247,6 @@
                     ],
                     "19": [
                         15,
-                        35,
                         42,
                         43,
                         49,
@@ -4314,6 +4311,7 @@
                         23
                     ],
                     "24": [
+                        4,
                         21,
                         33,
                         49,
@@ -4476,7 +4474,6 @@
                         7,
                         9,
                         14,
-                        19,
                         20,
                         27,
                         37,
@@ -4795,7 +4792,6 @@
                         58
                     ],
                     "59": [
-                        3,
                         4,
                         8,
                         21,
@@ -4851,6 +4847,7 @@
                         70,
                         78,
                         81,
+                        85,
                         63
                     ],
                     "64": [
@@ -5042,7 +5039,6 @@
                         1,
                         2,
                         5,
-                        14,
                         19,
                         20,
                         24,
@@ -5078,6 +5074,7 @@
                         41,
                         57,
                         63,
+                        87,
                         81
                     ],
                     "82": [
@@ -5126,6 +5123,7 @@
                         33,
                         36,
                         50,
+                        63,
                         65,
                         97,
                         85
@@ -5147,6 +5145,7 @@
                         23,
                         53,
                         57,
+                        81,
                         90,
                         98,
                         12,
@@ -5301,7 +5300,7 @@
                         99
                     ]
                 },
-                "sender_id": 48,
+                "sender_id": 28,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -5318,10 +5317,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d4.json",
             "threadCount": 1,
             "distribution": {
@@ -5379,6 +5378,7 @@
                     ],
                     "3": [
                         10,
+                        26,
                         35,
                         37,
                         54,
@@ -5396,6 +5396,7 @@
                         33,
                         36,
                         39,
+                        59,
                         63,
                         64,
                         86,
@@ -5439,9 +5440,7 @@
                         25,
                         43,
                         59,
-                        91,
                         98,
-                        12,
                         8
                     ],
                     "9": [
@@ -5486,7 +5485,6 @@
                         26,
                         80,
                         95,
-                        8,
                         87,
                         55,
                         12
@@ -5667,6 +5665,7 @@
                     ],
                     "26": [
                         2,
+                        3,
                         12,
                         16,
                         17,
@@ -5782,7 +5781,6 @@
                         85,
                         86,
                         89,
-                        91,
                         93,
                         33
                     ],
@@ -5790,7 +5788,6 @@
                         9,
                         30,
                         31,
-                        38,
                         70,
                         76,
                         77,
@@ -5834,7 +5831,6 @@
                         37
                     ],
                     "38": [
-                        34,
                         66,
                         64,
                         82,
@@ -5990,6 +5986,7 @@
                         48,
                         55,
                         57,
+                        67,
                         70,
                         97,
                         49
@@ -6053,6 +6050,7 @@
                         37,
                         39,
                         41,
+                        57,
                         60,
                         62,
                         63,
@@ -6095,6 +6093,7 @@
                         36,
                         47,
                         49,
+                        54,
                         56,
                         58,
                         67,
@@ -6119,6 +6118,7 @@
                     ],
                     "59": [
                         3,
+                        4,
                         8,
                         21,
                         44,
@@ -6217,6 +6217,7 @@
                         26,
                         33,
                         40,
+                        49,
                         56,
                         57,
                         60,
@@ -6518,11 +6519,9 @@
                     "91": [
                         0,
                         1,
-                        8,
                         24,
                         26,
                         30,
-                        33,
                         45,
                         62,
                         92,
@@ -6626,7 +6625,7 @@
                         99
                     ]
                 },
-                "sender_id": 75,
+                "sender_id": 19,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -6643,10 +6642,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t0_d5.json",
             "threadCount": 1,
             "distribution": {
@@ -6909,7 +6908,6 @@
                         69,
                         70,
                         72,
-                        79,
                         82,
                         90,
                         92,
@@ -6921,7 +6919,6 @@
                         16,
                         22,
                         30,
-                        35,
                         54,
                         79,
                         87,
@@ -7061,7 +7058,6 @@
                         47,
                         51,
                         54,
-                        65,
                         83,
                         89,
                         91,
@@ -7131,7 +7127,6 @@
                         9,
                         14,
                         19,
-                        20,
                         27,
                         37,
                         94,
@@ -7196,9 +7191,12 @@
                     ],
                     "41": [
                         27,
+                        43,
                         50,
+                        54,
                         63,
                         64,
+                        76,
                         78,
                         81,
                         41
@@ -7225,7 +7223,7 @@
                         16,
                         19,
                         23,
-                        51,
+                        41,
                         56,
                         71,
                         74,
@@ -7242,6 +7240,7 @@
                         49,
                         52,
                         55,
+                        59,
                         65,
                         79,
                         89,
@@ -7271,6 +7270,7 @@
                         69,
                         74,
                         75,
+                        78,
                         82,
                         96,
                         46
@@ -7332,7 +7332,6 @@
                     "51": [
                         15,
                         30,
-                        43,
                         53,
                         56,
                         74,
@@ -7375,6 +7374,7 @@
                         30,
                         37,
                         39,
+                        41,
                         57,
                         60,
                         62,
@@ -7446,6 +7446,7 @@
                         4,
                         8,
                         21,
+                        44,
                         80,
                         59
                     ],
@@ -7516,7 +7517,6 @@
                         1,
                         18,
                         28,
-                        30,
                         33,
                         44,
                         73,
@@ -7617,7 +7617,6 @@
                         64,
                         65,
                         72,
-                        77,
                         73
                     ],
                     "74": [
@@ -7651,6 +7650,7 @@
                         26,
                         29,
                         34,
+                        41,
                         58,
                         72,
                         74,
@@ -7667,7 +7667,6 @@
                         39,
                         43,
                         69,
-                        73,
                         75,
                         77
                     ],
@@ -7676,6 +7675,7 @@
                         32,
                         41,
                         43,
+                        46,
                         52,
                         58,
                         63,
@@ -7688,7 +7688,6 @@
                         2,
                         5,
                         14,
-                        19,
                         20,
                         24,
                         29,
@@ -7949,7 +7948,7 @@
                         99
                     ]
                 },
-                "sender_id": 8,
+                "sender_id": 29,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -7966,10 +7965,10 @@
                 "delivery_threshold": 1
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t1_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -9282,14 +9281,14 @@
                         99
                     ]
                 },
-                "sender_id": 62,
+                "sender_id": 65,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        76
+                        8
                     ]
                 },
                 "messageAdversary": {
@@ -9301,10 +9300,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t1_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -9453,7 +9452,6 @@
                     ],
                     "11": [
                         13,
-                        20,
                         27,
                         30,
                         37,
@@ -9575,7 +9573,6 @@
                     ],
                     "20": [
                         6,
-                        11,
                         16,
                         22,
                         30,
@@ -10257,6 +10254,7 @@
                         43,
                         72,
                         74,
+                        90,
                         71
                     ],
                     "72": [
@@ -10500,6 +10498,7 @@
                         47,
                         50,
                         67,
+                        71,
                         87,
                         95,
                         90
@@ -10615,14 +10614,14 @@
                         99
                     ]
                 },
-                "sender_id": 7,
+                "sender_id": 53,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        0
+                        94
                     ]
                 },
                 "messageAdversary": {
@@ -10634,10 +10633,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t1_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -10698,7 +10697,6 @@
                         26,
                         35,
                         37,
-                        54,
                         56,
                         59,
                         62,
@@ -10730,6 +10728,7 @@
                         5
                     ],
                     "6": [
+                        18,
                         20,
                         27,
                         30,
@@ -10879,6 +10878,7 @@
                         17
                     ],
                     "18": [
+                        6,
                         13,
                         14,
                         27,
@@ -11204,7 +11204,6 @@
                         37,
                         39,
                         45,
-                        56,
                         61,
                         70,
                         79,
@@ -11360,7 +11359,6 @@
                         53
                     ],
                     "54": [
-                        3,
                         9,
                         11,
                         14,
@@ -11399,7 +11397,6 @@
                         14,
                         15,
                         40,
-                        42,
                         43,
                         48,
                         51,
@@ -11551,6 +11548,7 @@
                         33,
                         66,
                         69,
+                        79,
                         83,
                         95,
                         68
@@ -11695,6 +11693,7 @@
                         42,
                         44,
                         47,
+                        68,
                         86,
                         92,
                         79
@@ -11946,14 +11945,14 @@
                         99
                     ]
                 },
-                "sender_id": 97,
+                "sender_id": 35,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        93
+                        11
                     ]
                 },
                 "messageAdversary": {
@@ -11965,10 +11964,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t1_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -11987,7 +11986,6 @@
                         61,
                         63,
                         66,
-                        82,
                         86,
                         91,
                         92,
@@ -12179,7 +12177,6 @@
                         62,
                         70,
                         73,
-                        92,
                         95,
                         15
                     ],
@@ -12346,6 +12343,7 @@
                         62,
                         77,
                         88,
+                        89,
                         96,
                         97,
                         27
@@ -12394,6 +12392,7 @@
                         27,
                         34,
                         36,
+                        46,
                         50,
                         64,
                         70,
@@ -12589,6 +12588,7 @@
                         45
                     ],
                     "46": [
+                        31,
                         39,
                         47,
                         52,
@@ -12860,7 +12860,6 @@
                         61,
                         68,
                         72,
-                        88,
                         95,
                         66
                     ],
@@ -13056,7 +13055,6 @@
                         81
                     ],
                     "82": [
-                        0,
                         11,
                         19,
                         21,
@@ -13124,6 +13122,7 @@
                         53,
                         57,
                         81,
+                        90,
                         98,
                         12,
                         87
@@ -13135,12 +13134,12 @@
                         47,
                         53,
                         55,
-                        66,
                         82,
                         88
                     ],
                     "89": [
                         7,
+                        27,
                         30,
                         33,
                         44,
@@ -13161,6 +13160,7 @@
                         50,
                         67,
                         71,
+                        87,
                         95,
                         90
                     ],
@@ -13180,7 +13180,6 @@
                     ],
                     "92": [
                         0,
-                        15,
                         91,
                         19,
                         79,
@@ -13275,14 +13274,14 @@
                         99
                     ]
                 },
-                "sender_id": 63,
+                "sender_id": 82,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        6
+                        52
                     ]
                 },
                 "messageAdversary": {
@@ -13294,10 +13293,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t1_d4.json",
             "threadCount": 1,
             "distribution": {
@@ -13547,7 +13546,6 @@
                         33,
                         39,
                         65,
-                        74,
                         99,
                         18
                     ],
@@ -13621,7 +13619,6 @@
                         4,
                         21,
                         33,
-                        49,
                         63,
                         78,
                         79,
@@ -13795,7 +13792,7 @@
                         31,
                         57,
                         81,
-                        85,
+                        90,
                         95,
                         36
                     ],
@@ -13837,8 +13834,10 @@
                     ],
                     "40": [
                         22,
+                        56,
                         63,
                         67,
+                        73,
                         47,
                         40
                     ],
@@ -13938,6 +13937,7 @@
                         74,
                         75,
                         79,
+                        88,
                         90,
                         40,
                         47
@@ -13960,7 +13960,6 @@
                         2,
                         14,
                         19,
-                        24,
                         44,
                         48,
                         55,
@@ -14056,6 +14055,7 @@
                         13,
                         14,
                         15,
+                        40,
                         42,
                         43,
                         48,
@@ -14264,6 +14264,7 @@
                         23,
                         25,
                         33,
+                        40,
                         45,
                         54,
                         62,
@@ -14276,7 +14277,6 @@
                     "74": [
                         11,
                         17,
-                        18,
                         37,
                         43,
                         46,
@@ -14287,7 +14287,6 @@
                         52,
                         71,
                         76,
-                        84,
                         74
                     ],
                     "75": [
@@ -14416,7 +14415,6 @@
                         9,
                         10,
                         14,
-                        74,
                         78,
                         84
                     ],
@@ -14425,7 +14423,6 @@
                         16,
                         32,
                         33,
-                        36,
                         50,
                         63,
                         65,
@@ -14459,6 +14456,7 @@
                         9,
                         25,
                         27,
+                        47,
                         53,
                         55,
                         66,
@@ -14483,6 +14481,7 @@
                         13,
                         19,
                         22,
+                        36,
                         47,
                         50,
                         67,
@@ -14602,14 +14601,14 @@
                         99
                     ]
                 },
-                "sender_id": 10,
+                "sender_id": 23,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        65
+                        64
                     ]
                 },
                 "messageAdversary": {
@@ -14621,10 +14620,10 @@
                 "delivery_threshold": 3
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t2_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -15937,15 +15936,15 @@
                         99
                     ]
                 },
-                "sender_id": 29,
+                "sender_id": 2,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        18,
-                        55
+                        81,
+                        52
                     ]
                 },
                 "messageAdversary": {
@@ -15957,10 +15956,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t2_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -16010,7 +16009,6 @@
                         52,
                         53,
                         66,
-                        76,
                         79,
                         99,
                         93,
@@ -16434,6 +16432,7 @@
                         31,
                         38,
                         70,
+                        76,
                         77,
                         83,
                         34
@@ -16968,9 +16967,9 @@
                         75
                     ],
                     "76": [
-                        2,
                         26,
                         29,
+                        34,
                         41,
                         58,
                         72,
@@ -17271,15 +17270,15 @@
                         99
                     ]
                 },
-                "sender_id": 13,
+                "sender_id": 7,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        57,
-                        31
+                        40,
+                        1
                     ]
                 },
                 "messageAdversary": {
@@ -17291,10 +17290,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t2_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -17355,7 +17354,6 @@
                         26,
                         35,
                         37,
-                        54,
                         56,
                         59,
                         62,
@@ -17477,6 +17475,7 @@
                         62,
                         72,
                         77,
+                        90,
                         99,
                         13
                     ],
@@ -17793,7 +17792,6 @@
                         81,
                         85,
                         90,
-                        95,
                         36
                     ],
                     "37": [
@@ -17919,6 +17917,7 @@
                         31,
                         39,
                         47,
+                        52,
                         69,
                         74,
                         75,
@@ -17997,6 +17996,7 @@
                         2,
                         17,
                         44,
+                        46,
                         58,
                         74,
                         78,
@@ -18016,7 +18016,6 @@
                         53
                     ],
                     "54": [
-                        3,
                         9,
                         11,
                         14,
@@ -18481,6 +18480,7 @@
                     ],
                     "90": [
                         11,
+                        13,
                         19,
                         22,
                         36,
@@ -18540,7 +18540,6 @@
                         5,
                         12,
                         15,
-                        36,
                         45,
                         53,
                         66,
@@ -18603,15 +18602,15 @@
                         99
                     ]
                 },
-                "sender_id": 74,
+                "sender_id": 30,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        97,
-                        66
+                        13,
+                        28
                     ]
                 },
                 "messageAdversary": {
@@ -18623,10 +18622,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t2_d3.json",
             "threadCount": 1,
             "distribution": {
@@ -18655,6 +18654,7 @@
                     ],
                     "1": [
                         27,
+                        28,
                         29,
                         45,
                         47,
@@ -18903,6 +18903,7 @@
                         35,
                         54,
                         79,
+                        87,
                         20
                     ],
                     "21": [
@@ -19008,6 +19009,7 @@
                         27
                     ],
                     "28": [
+                        1,
                         27,
                         42,
                         54,
@@ -19319,8 +19321,6 @@
                         53,
                         56,
                         74,
-                        80,
-                        99,
                         93,
                         51
                     ],
@@ -19538,6 +19538,7 @@
                         22,
                         33,
                         66,
+                        69,
                         79,
                         83,
                         95,
@@ -19549,6 +19550,7 @@
                         19,
                         32,
                         46,
+                        68,
                         77,
                         94,
                         69
@@ -19572,7 +19574,6 @@
                         23,
                         31,
                         43,
-                        72,
                         74,
                         90,
                         71
@@ -19582,7 +19583,6 @@
                         19,
                         64,
                         66,
-                        71,
                         73,
                         76,
                         96,
@@ -19692,7 +19692,6 @@
                         17,
                         29,
                         50,
-                        51,
                         55,
                         97,
                         59,
@@ -19775,6 +19774,7 @@
                     "87": [
                         1,
                         17,
+                        20,
                         23,
                         53,
                         57,
@@ -19926,22 +19926,21 @@
                         17,
                         18,
                         39,
-                        51,
                         82,
                         94,
                         95,
                         99
                     ]
                 },
-                "sender_id": 58,
+                "sender_id": 52,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        3,
-                        48
+                        20,
+                        59
                     ]
                 },
                 "messageAdversary": {
@@ -19953,10 +19952,10 @@
                 "delivery_threshold": 5
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t3_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -21269,16 +21268,16 @@
                         99
                     ]
                 },
-                "sender_id": 67,
+                "sender_id": 42,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        70,
-                        78,
-                        59
+                        82,
+                        77,
+                        88
                     ]
                 },
                 "messageAdversary": {
@@ -21290,10 +21289,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t3_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -21351,6 +21350,7 @@
                     ],
                     "3": [
                         10,
+                        26,
                         35,
                         37,
                         54,
@@ -21640,6 +21640,7 @@
                     ],
                     "26": [
                         2,
+                        3,
                         12,
                         16,
                         17,
@@ -21660,7 +21661,6 @@
                         14,
                         18,
                         25,
-                        28,
                         31,
                         35,
                         36,
@@ -21676,7 +21676,6 @@
                     ],
                     "28": [
                         1,
-                        27,
                         42,
                         54,
                         63,
@@ -22604,16 +22603,16 @@
                         99
                     ]
                 },
-                "sender_id": 98,
+                "sender_id": 77,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        82,
-                        59,
-                        14
+                        11,
+                        31,
+                        49
                     ]
                 },
                 "messageAdversary": {
@@ -22625,10 +22624,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t3_d2.json",
             "threadCount": 1,
             "distribution": {
@@ -23044,7 +23043,6 @@
                         51,
                         54,
                         65,
-                        83,
                         89,
                         91,
                         5,
@@ -23253,6 +23251,7 @@
                     "46": [
                         31,
                         39,
+                        47,
                         52,
                         69,
                         74,
@@ -23265,6 +23264,7 @@
                     "47": [
                         1,
                         30,
+                        46,
                         55,
                         57,
                         74,
@@ -23336,6 +23336,7 @@
                         74,
                         78,
                         89,
+                        97,
                         52
                     ],
                     "53": [
@@ -23589,7 +23590,6 @@
                         71,
                         73,
                         76,
-                        96,
                         72
                     ],
                     "73": [
@@ -23735,7 +23735,6 @@
                     "83": [
                         10,
                         14,
-                        30,
                         34,
                         45,
                         48,
@@ -23894,7 +23893,6 @@
                         46,
                         62,
                         64,
-                        72,
                         76,
                         96
                     ],
@@ -23902,6 +23900,7 @@
                         25,
                         27,
                         49,
+                        52,
                         55,
                         80,
                         85,
@@ -23937,16 +23936,16 @@
                         99
                     ]
                 },
-                "sender_id": 93,
+                "sender_id": 74,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        54,
-                        68,
-                        11
+                        80,
+                        58,
+                        88
                     ]
                 },
                 "messageAdversary": {
@@ -23958,10 +23957,10 @@
                 "delivery_threshold": 7
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t4_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -25274,17 +25273,17 @@
                         99
                     ]
                 },
-                "sender_id": 88,
+                "sender_id": 41,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        54,
-                        97,
+                        94,
+                        24,
                         6,
-                        51
+                        98
                     ]
                 },
                 "messageAdversary": {
@@ -25296,10 +25295,10 @@
                 "delivery_threshold": 9
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t4_d1.json",
             "threadCount": 1,
             "distribution": {
@@ -25349,6 +25348,7 @@
                         52,
                         53,
                         66,
+                        76,
                         79,
                         99,
                         93,
@@ -25724,7 +25724,6 @@
                         9,
                         27,
                         34,
-                        36,
                         46,
                         50,
                         64,
@@ -25793,7 +25792,6 @@
                         0,
                         4,
                         27,
-                        31,
                         57,
                         81,
                         85,
@@ -26307,6 +26305,7 @@
                         75
                     ],
                     "76": [
+                        2,
                         26,
                         29,
                         34,
@@ -26610,17 +26609,17 @@
                         99
                     ]
                 },
-                "sender_id": 73,
+                "sender_id": 50,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        72,
-                        57,
-                        81,
-                        95
+                        80,
+                        82,
+                        70,
+                        2
                     ]
                 },
                 "messageAdversary": {
@@ -26632,10 +26631,10 @@
                 "delivery_threshold": 9
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         },
         {
-            "algorithm": "random_graph_n100_k6_e500",
             "logFile": "results/MA3/random_graph/n100_k6_e500/bracha/t5_d0.json",
             "threadCount": 1,
             "distribution": {
@@ -27948,18 +27947,18 @@
                         99
                     ]
                 },
-                "sender_id": 13,
+                "sender_id": 0,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        63,
-                        64,
-                        94,
-                        91,
-                        93
+                        49,
+                        74,
+                        40,
+                        12,
+                        87
                     ]
                 },
                 "messageAdversary": {
@@ -27971,7 +27970,8 @@
                 "delivery_threshold": 11
             },
             "tests": 100,
-            "rounds": 200
+            "rounds": 200,
+            "outFile": "bracha_random_graph_n100_k6_e500"
         }
     ]
 }

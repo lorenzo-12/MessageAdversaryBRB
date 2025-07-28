@@ -116,7 +116,8 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, delivery_threshold, alg
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/")[-1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
+    del net_json["experiments"][0]["algorithm"]
+    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma1", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200
@@ -150,7 +151,8 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, delivery_threshold, alg
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/")[-1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
+    del net_json["experiments"][0]["algorithm"]
+    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma2", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200
@@ -187,7 +189,8 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, delivery_threshold, alg
     net_json = getNetwork(net_name)
     topology_name = net_name.split("/")[-1].replace(".json","")
     
-    net_json["experiments"][0]["algorithm"] = f"{topology_name}"
+    del net_json["experiments"][0]["algorithm"]
+    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma3", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 100
     net_json["experiments"][0]["rounds"] = 200
@@ -220,20 +223,7 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, delivery_threshold, alg
     return net_json["experiments"][0]
 
 
-""" for file in path_base_topologies.rglob("*.json"):
-    net_json = getNetwork(file)
-    first_exp = net_json["experiments"][0]
-    net_json["experiments"] = [first_exp]
-    with open(file, "w+") as f:
-        json.dump(net_json, f, indent=4) """ 
-        
 
-
-        
-""" for file in os.listdir(path_ma1):
-    with open(path_ma1/file,"r") as f:
-        data = json.load(f)
-        print(file,len(data["experiments"]))      """ 
 
 
 
