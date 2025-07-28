@@ -1087,7 +1087,7 @@
                         99
                     ]
                 },
-                "sender_id": 63,
+                "sender_id": 92,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1103,7 +1103,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -2194,7 +2194,7 @@
                         99
                     ]
                 },
-                "sender_id": 73,
+                "sender_id": 4,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -2210,7 +2210,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -3301,7 +3301,7 @@
                         99
                     ]
                 },
-                "sender_id": 24,
+                "sender_id": 75,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3317,7 +3317,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -4408,7 +4408,7 @@
                         99
                     ]
                 },
-                "sender_id": 81,
+                "sender_id": 88,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -4424,7 +4424,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -5515,7 +5515,7 @@
                         99
                     ]
                 },
-                "sender_id": 41,
+                "sender_id": 39,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -5531,7 +5531,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -6622,7 +6622,7 @@
                         99
                     ]
                 },
-                "sender_id": 24,
+                "sender_id": 38,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -6638,7 +6638,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -7729,14 +7729,14 @@
                         99
                     ]
                 },
-                "sender_id": 98,
+                "sender_id": 59,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        83
+                        19
                     ]
                 },
                 "messageAdversary": {
@@ -7747,7 +7747,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -8838,14 +8838,14 @@
                         99
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 37,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        17
+                        5
                     ]
                 },
                 "messageAdversary": {
@@ -8856,7 +8856,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -9947,14 +9947,14 @@
                         99
                     ]
                 },
-                "sender_id": 5,
+                "sender_id": 45,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        51
+                        18
                     ]
                 },
                 "messageAdversary": {
@@ -9965,7 +9965,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -11056,14 +11056,14 @@
                         99
                     ]
                 },
-                "sender_id": 72,
+                "sender_id": 1,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        71
+                        2
                     ]
                 },
                 "messageAdversary": {
@@ -11074,7 +11074,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -12165,14 +12165,14 @@
                         99
                     ]
                 },
-                "sender_id": 36,
+                "sender_id": 85,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        13
+                        27
                     ]
                 },
                 "messageAdversary": {
@@ -12183,7 +12183,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -13274,15 +13274,15 @@
                         99
                     ]
                 },
-                "sender_id": 77,
+                "sender_id": 56,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        43,
-                        2
+                        36,
+                        68
                     ]
                 },
                 "messageAdversary": {
@@ -13293,7 +13293,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -14384,15 +14384,15 @@
                         99
                     ]
                 },
-                "sender_id": 69,
+                "sender_id": 74,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        73,
-                        65
+                        53,
+                        34
                     ]
                 },
                 "messageAdversary": {
@@ -14403,7 +14403,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -15494,15 +15494,15 @@
                         99
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 25,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        34,
-                        82
+                        78,
+                        0
                     ]
                 },
                 "messageAdversary": {
@@ -15513,7 +15513,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -16604,15 +16604,15 @@
                         99
                     ]
                 },
-                "sender_id": 1,
+                "sender_id": 35,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        19,
-                        28
+                        24,
+                        8
                     ]
                 },
                 "messageAdversary": {
@@ -16623,7 +16623,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -17714,16 +17714,16 @@
                         99
                     ]
                 },
-                "sender_id": 65,
+                "sender_id": 47,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        20,
-                        78,
-                        26
+                        46,
+                        18,
+                        97
                     ]
                 },
                 "messageAdversary": {
@@ -17734,7 +17734,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -18825,16 +18825,16 @@
                         99
                     ]
                 },
-                "sender_id": 33,
+                "sender_id": 30,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        3,
-                        12,
-                        50
+                        14,
+                        26,
+                        7
                     ]
                 },
                 "messageAdversary": {
@@ -18845,7 +18845,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -19936,16 +19936,16 @@
                         99
                     ]
                 },
-                "sender_id": 56,
+                "sender_id": 39,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        67,
-                        85,
-                        16
+                        80,
+                        70,
+                        72
                     ]
                 },
                 "messageAdversary": {
@@ -19956,7 +19956,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -21047,7 +21047,7 @@
                         99
                     ]
                 },
-                "sender_id": 48,
+                "sender_id": 49,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -21055,9 +21055,9 @@
                     "total": 4,
                     "list": [
                         70,
-                        18,
-                        40,
-                        17
+                        58,
+                        3,
+                        4
                     ]
                 },
                 "messageAdversary": {
@@ -21068,7 +21068,7 @@
                 "print": false,
                 "delivery_threshold": 9
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -22159,17 +22159,17 @@
                         99
                     ]
                 },
-                "sender_id": 71,
+                "sender_id": 52,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        2,
-                        35,
-                        51,
-                        81
+                        39,
+                        36,
+                        43,
+                        86
                     ]
                 },
                 "messageAdversary": {
@@ -22180,7 +22180,7 @@
                 "print": false,
                 "delivery_threshold": 9
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         },
@@ -23271,18 +23271,18 @@
                         99
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 58,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        18,
-                        37,
-                        50,
-                        25,
-                        74
+                        1,
+                        10,
+                        82,
+                        27,
+                        19
                     ]
                 },
                 "messageAdversary": {
@@ -23293,7 +23293,7 @@
                 "print": false,
                 "delivery_threshold": 11
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "opodis_2t+1_random_graph_pruned_n100_k6"
         }

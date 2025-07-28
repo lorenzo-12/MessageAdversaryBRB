@@ -1513,7 +1513,7 @@
                         99
                     ]
                 },
-                "sender_id": 91,
+                "sender_id": 89,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1529,7 +1529,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -3046,7 +3046,7 @@
                         99
                     ]
                 },
-                "sender_id": 87,
+                "sender_id": 7,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3062,7 +3062,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -4595,7 +4595,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -6112,7 +6112,7 @@
                         99
                     ]
                 },
-                "sender_id": 14,
+                "sender_id": 21,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -6128,7 +6128,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -7645,7 +7645,7 @@
                         99
                     ]
                 },
-                "sender_id": 7,
+                "sender_id": 67,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -7661,7 +7661,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -9178,7 +9178,7 @@
                         99
                     ]
                 },
-                "sender_id": 50,
+                "sender_id": 67,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -9194,7 +9194,7 @@
                 "print": false,
                 "delivery_threshold": 1
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -10711,14 +10711,14 @@
                         99
                     ]
                 },
-                "sender_id": 76,
+                "sender_id": 16,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        91
+                        38
                     ]
                 },
                 "messageAdversary": {
@@ -10729,7 +10729,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -12246,14 +12246,14 @@
                         99
                     ]
                 },
-                "sender_id": 83,
+                "sender_id": 58,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        29
+                        7
                     ]
                 },
                 "messageAdversary": {
@@ -12264,7 +12264,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -13781,14 +13781,14 @@
                         99
                     ]
                 },
-                "sender_id": 94,
+                "sender_id": 19,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        21
+                        95
                     ]
                 },
                 "messageAdversary": {
@@ -13799,7 +13799,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -15316,14 +15316,14 @@
                         99
                     ]
                 },
-                "sender_id": 96,
+                "sender_id": 30,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        39
+                        45
                     ]
                 },
                 "messageAdversary": {
@@ -15334,7 +15334,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -16851,14 +16851,14 @@
                         99
                     ]
                 },
-                "sender_id": 93,
+                "sender_id": 16,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        45
+                        74
                     ]
                 },
                 "messageAdversary": {
@@ -16869,7 +16869,7 @@
                 "print": false,
                 "delivery_threshold": 3
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -18386,15 +18386,15 @@
                         99
                     ]
                 },
-                "sender_id": 89,
+                "sender_id": 81,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        48,
-                        91
+                        84,
+                        71
                     ]
                 },
                 "messageAdversary": {
@@ -18405,7 +18405,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -19922,15 +19922,15 @@
                         99
                     ]
                 },
-                "sender_id": 56,
+                "sender_id": 28,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        34,
-                        64
+                        44,
+                        24
                     ]
                 },
                 "messageAdversary": {
@@ -19941,7 +19941,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -21458,15 +21458,15 @@
                         99
                     ]
                 },
-                "sender_id": 61,
+                "sender_id": 31,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        54,
-                        45
+                        51,
+                        54
                     ]
                 },
                 "messageAdversary": {
@@ -21477,7 +21477,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -22994,15 +22994,15 @@
                         99
                     ]
                 },
-                "sender_id": 39,
+                "sender_id": 28,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        16,
-                        54
+                        6,
+                        72
                     ]
                 },
                 "messageAdversary": {
@@ -23013,7 +23013,7 @@
                 "print": false,
                 "delivery_threshold": 5
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -24530,16 +24530,16 @@
                         99
                     ]
                 },
-                "sender_id": 0,
+                "sender_id": 62,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        46,
-                        98,
-                        15
+                        41,
+                        85,
+                        54
                     ]
                 },
                 "messageAdversary": {
@@ -24550,7 +24550,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -26067,16 +26067,16 @@
                         99
                     ]
                 },
-                "sender_id": 36,
+                "sender_id": 84,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        43,
-                        74,
-                        99
+                        56,
+                        37,
+                        70
                     ]
                 },
                 "messageAdversary": {
@@ -26087,7 +26087,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -27604,16 +27604,16 @@
                         99
                     ]
                 },
-                "sender_id": 61,
+                "sender_id": 51,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        45,
-                        92,
-                        27
+                        14,
+                        19,
+                        11
                     ]
                 },
                 "messageAdversary": {
@@ -27624,7 +27624,7 @@
                 "print": false,
                 "delivery_threshold": 7
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -29141,17 +29141,17 @@
                         99
                     ]
                 },
-                "sender_id": 76,
+                "sender_id": 53,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        97,
-                        27,
-                        59,
-                        40
+                        39,
+                        58,
+                        3,
+                        13
                     ]
                 },
                 "messageAdversary": {
@@ -29162,7 +29162,7 @@
                 "print": false,
                 "delivery_threshold": 9
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -30679,17 +30679,17 @@
                         99
                     ]
                 },
-                "sender_id": 8,
+                "sender_id": 24,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        73,
-                        21,
-                        65,
-                        34
+                        83,
+                        39,
+                        58,
+                        85
                     ]
                 },
                 "messageAdversary": {
@@ -30700,7 +30700,7 @@
                 "print": false,
                 "delivery_threshold": 9
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         },
@@ -32217,18 +32217,18 @@
                         99
                     ]
                 },
-                "sender_id": 56,
+                "sender_id": 96,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        89,
-                        98,
-                        70,
-                        48,
-                        7
+                        90,
+                        85,
+                        5,
+                        30,
+                        24
                     ]
                 },
                 "messageAdversary": {
@@ -32239,7 +32239,7 @@
                 "print": false,
                 "delivery_threshold": 11
             },
-            "tests": 100,
+            "tests": 25,
             "rounds": 200,
             "outFile": "bracha_random_graph_n100_k6_e600"
         }

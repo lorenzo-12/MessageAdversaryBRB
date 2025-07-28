@@ -42,7 +42,7 @@ files = [
 file = os.listdir(path_ma1)[0]
 with open(path_ma1/file,"r") as f:
     data = json.load(f)
-    total_tests = 100*len(data["experiments"])
+    total_tests = int(data["experiments"][0]["tests"])*len(data["experiments"])
     
 makefile_text = ""
 with open(path_makefile, "r") as f:

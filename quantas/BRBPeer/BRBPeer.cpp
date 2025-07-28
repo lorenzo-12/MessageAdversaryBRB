@@ -500,7 +500,7 @@ namespace quantas {
 			peer->msgs_sent_prev = peer->msgs_sent;
 		}
 		if (print==true) cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET << endl;
-		//cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET << endl;
+		cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET << endl;
 	}
 
 	Simulation<quantas::ExampleMessage, quantas::BRBPeer>* generateSim() {

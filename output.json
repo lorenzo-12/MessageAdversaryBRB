@@ -1,15 +1,15 @@
 {
-    "RunTime": 385.716200458,
+    "RunTime": 56.498455041,
     "tests": {
         "0": {
             "MessageAdversaryPower": 0,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.0,
+            "avgDeliveryTime": 3.96,
             "byzantineNodes": [],
             "disconnectedNodes": [],
             "maxDeliveryTime": 4,
             "senderId": 0,
-            "totalMsgsSent": 47277776
+            "totalMsgsSent": 8540632
         }
     }
 }
