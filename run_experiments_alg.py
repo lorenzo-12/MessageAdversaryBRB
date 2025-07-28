@@ -70,6 +70,9 @@ def modify_line(arg_line, arg_makefile):
 processes = []
 
 for ma_type in [1,2,3]:
+    for file in files:
+        f = open(f"results_status/{algorithm}_{file}", "w+")
+        
     for i, exp in enumerate(experiments):
         
         exp_name = exp.split("topologies/")[1].replace(".json","")

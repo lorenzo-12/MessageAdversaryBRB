@@ -904,7 +904,7 @@
                         98
                     ]
                 },
-                "sender_id": 57,
+                "sender_id": 4,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -922,7 +922,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t0_d1.json",
@@ -1828,7 +1828,7 @@
                         98
                     ]
                 },
-                "sender_id": 82,
+                "sender_id": 93,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -1846,7 +1846,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t0_d2.json",
@@ -2752,7 +2752,7 @@
                         98
                     ]
                 },
-                "sender_id": 36,
+                "sender_id": 86,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -2770,7 +2770,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t0_d3.json",
@@ -3676,7 +3676,7 @@
                         98
                     ]
                 },
-                "sender_id": 88,
+                "sender_id": 86,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -3694,7 +3694,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t0_d4.json",
@@ -4600,7 +4600,7 @@
                         98
                     ]
                 },
-                "sender_id": 9,
+                "sender_id": 21,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -4618,7 +4618,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t0_d5.json",
@@ -5524,7 +5524,7 @@
                         98
                     ]
                 },
-                "sender_id": 4,
+                "sender_id": 49,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
@@ -5542,7 +5542,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t1_d0.json",
@@ -6448,14 +6448,14 @@
                         98
                     ]
                 },
-                "sender_id": 71,
+                "sender_id": 42,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        22
+                        19
                     ]
                 },
                 "messageAdversary": {
@@ -6468,7 +6468,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t1_d1.json",
@@ -7374,14 +7374,14 @@
                         98
                     ]
                 },
-                "sender_id": 10,
+                "sender_id": 53,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        39
+                        68
                     ]
                 },
                 "messageAdversary": {
@@ -7394,7 +7394,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t1_d2.json",
@@ -8300,14 +8300,14 @@
                         98
                     ]
                 },
-                "sender_id": 39,
+                "sender_id": 59,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        4
+                        5
                     ]
                 },
                 "messageAdversary": {
@@ -8320,7 +8320,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t1_d3.json",
@@ -9233,7 +9233,7 @@
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        59
+                        51
                     ]
                 },
                 "messageAdversary": {
@@ -9246,7 +9246,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t1_d4.json",
@@ -10152,14 +10152,14 @@
                         98
                     ]
                 },
-                "sender_id": 1,
+                "sender_id": 80,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 1,
                     "list": [
-                        15
+                        16
                     ]
                 },
                 "messageAdversary": {
@@ -10172,7 +10172,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t2_d0.json",
@@ -11078,15 +11078,15 @@
                         98
                     ]
                 },
-                "sender_id": 98,
+                "sender_id": 49,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        37,
-                        47
+                        26,
+                        28
                     ]
                 },
                 "messageAdversary": {
@@ -11099,7 +11099,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t2_d1.json",
@@ -12005,15 +12005,15 @@
                         98
                     ]
                 },
-                "sender_id": 69,
+                "sender_id": 46,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        87,
-                        90
+                        8,
+                        89
                     ]
                 },
                 "messageAdversary": {
@@ -12026,7 +12026,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t2_d2.json",
@@ -12932,15 +12932,15 @@
                         98
                     ]
                 },
-                "sender_id": 78,
+                "sender_id": 35,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        14,
-                        56
+                        88,
+                        82
                     ]
                 },
                 "messageAdversary": {
@@ -12953,7 +12953,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t2_d3.json",
@@ -13859,15 +13859,15 @@
                         98
                     ]
                 },
-                "sender_id": 27,
+                "sender_id": 61,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 2,
                     "list": [
-                        41,
-                        97
+                        44,
+                        47
                     ]
                 },
                 "messageAdversary": {
@@ -13880,7 +13880,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t3_d0.json",
@@ -14786,16 +14786,16 @@
                         98
                     ]
                 },
-                "sender_id": 90,
+                "sender_id": 43,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        82,
-                        48,
-                        30
+                        1,
+                        55,
+                        6
                     ]
                 },
                 "messageAdversary": {
@@ -14808,7 +14808,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t3_d1.json",
@@ -15714,16 +15714,16 @@
                         98
                     ]
                 },
-                "sender_id": 54,
+                "sender_id": 47,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        85,
-                        46,
-                        80
+                        41,
+                        75,
+                        21
                     ]
                 },
                 "messageAdversary": {
@@ -15736,7 +15736,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t3_d2.json",
@@ -16642,16 +16642,16 @@
                         98
                     ]
                 },
-                "sender_id": 23,
+                "sender_id": 28,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 3,
                     "list": [
-                        67,
-                        97,
-                        77
+                        44,
+                        96,
+                        83
                     ]
                 },
                 "messageAdversary": {
@@ -16664,7 +16664,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t4_d0.json",
@@ -17570,17 +17570,17 @@
                         98
                     ]
                 },
-                "sender_id": 90,
+                "sender_id": 73,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        11,
-                        51,
-                        55,
-                        2
+                        45,
+                        85,
+                        69,
+                        31
                     ]
                 },
                 "messageAdversary": {
@@ -17593,7 +17593,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t4_d1.json",
@@ -18499,17 +18499,17 @@
                         98
                     ]
                 },
-                "sender_id": 16,
+                "sender_id": 22,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 4,
                     "list": [
-                        0,
-                        2,
-                        77,
-                        11
+                        57,
+                        39,
+                        8,
+                        87
                     ]
                 },
                 "messageAdversary": {
@@ -18522,7 +18522,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         },
         {
             "logFile": "results/MA1/multipartite_wheel/n99_k6/opodis_2t+1/t5_d0.json",
@@ -19428,18 +19428,18 @@
                         98
                     ]
                 },
-                "sender_id": 78,
+                "sender_id": 31,
                 "msgToSend": 1,
                 "byzantine": {
                     "behavior": "silent",
                     "type": "userList",
                     "total": 5,
                     "list": [
-                        34,
-                        88,
-                        68,
-                        59,
-                        90
+                        80,
+                        54,
+                        39,
+                        35,
+                        44
                     ]
                 },
                 "messageAdversary": {
@@ -19452,7 +19452,7 @@
             },
             "tests": 100,
             "rounds": 200,
-            "outFile": "bracha_multipartite_wheel_n99_k6"
+            "outFile": "opodis_2t+1_multipartite_wheel_n99_k6"
         }
     ]
 }

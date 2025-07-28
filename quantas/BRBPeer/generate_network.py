@@ -102,6 +102,7 @@ def copyNetwork(algorithm):
         
         for net in net_json["experiments"]:
             net["logFile"] = net["logFile"].replace("bracha",algorithm)
+            net["outFile"] = net["outFile"].replace("bracha",algorithm)
             topology = net["topology"]
             topology["algorithm"] = algorithm
             t = topology["byzantine"]["total"]
