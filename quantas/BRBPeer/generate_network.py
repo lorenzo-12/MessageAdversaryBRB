@@ -26,7 +26,7 @@ def generate_net(algorithm):
     #----------------- GENERATE NETWORK MA1 -------------------------
     for file in path_base_topologies.rglob("*.json"):
         file = str(file)
-        if ("n24" in file or "n48" in file):
+        if ("n24" in file or "n48" in file or "n48" in file):
             continue
         net_json = getNetwork(file)
         n,k = extractNK(file)
@@ -51,7 +51,7 @@ def generate_net(algorithm):
     #----------------- GENERATE NETWORK MA2 -------------------------
     for file in path_base_topologies.rglob("*.json"):
         file = str(file)
-        if ("n24" in file or "n48" in file):
+        if ("n24" in file or "n48" in file or "n48" in file):
             continue
         net_json = getNetwork(file)
         n,k = extractNK(file)
@@ -76,7 +76,7 @@ def generate_net(algorithm):
     #----------------- GENERATE NETWORK MA3 -------------------------
     for file in path_base_topologies.rglob("*.json"):
         file = str(file)
-        if ("n24" in file or "n48" in file):
+        if ("n24" in file or "n48" in file or "n48" in file):
             continue
         net_json = getNetwork(file)
         n,k = extractNK(file)
@@ -102,6 +102,7 @@ def copyNetwork(algorithm):
         
         for net in net_json["experiments"]:
             net["logFile"] = net["logFile"].replace("bracha",algorithm)
+            os.makedirs(net["logFile"].split("/t")[0], exist_ok=True)
             net["outFile"] = net["outFile"].replace("bracha",algorithm)
             topology = net["topology"]
             topology["algorithm"] = algorithm
@@ -121,6 +122,7 @@ def copyNetwork(algorithm):
         
         for net in net_json["experiments"]:
             net["logFile"] = net["logFile"].replace("bracha",algorithm)
+            os.makedirs(net["logFile"].split("/t")[0], exist_ok=True)
             net["outFile"] = net["outFile"].replace("bracha",algorithm)
             topology = net["topology"]
             topology["algorithm"] = algorithm
@@ -140,6 +142,7 @@ def copyNetwork(algorithm):
         
         for net in net_json["experiments"]:
             net["logFile"] = net["logFile"].replace("bracha",algorithm)
+            os.makedirs(net["logFile"].split("/t")[0], exist_ok=True)
             net["outFile"] = net["outFile"].replace("bracha",algorithm)
             topology = net["topology"]
             topology["algorithm"] = algorithm
@@ -153,6 +156,9 @@ def copyNetwork(algorithm):
         os.makedirs(out_dict, exist_ok=True)
         with open(out, "w+") as f:
             json.dump(net_json, f, indent=4)
+
+def addGitKeep():
+    code = "find . -type d -empty -exec touch {}/.gitkeep \;"
 
 generate_net("bracha")
 copyNetwork("opodis_1")

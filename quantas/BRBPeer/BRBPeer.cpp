@@ -161,43 +161,15 @@ namespace quantas {
 	// senderId is the id of the node from which the message was received
 	void BRBPeer::propagate(ExampleMessage msg, interfaceId senderId){
 		if (msg.source == id()) return; // if the source is me, then i already propagated it
-		if (msg.type == "send" && find(received_msgs_send.begin(), received_msgs_send.end(), msg.id) == received_msgs_send.end()){
-			received_msgs_send.push_back(msg.id);
-			if (algorithm == "bracha" && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
-			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
+		if (received_msgs_set.count(msg.id) == 0) {
+			received_msgs_set.insert(msg.id);
+			if (algorithm == "bracha" && print == true)
+				cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
+			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print == true)
+				cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
 			rc_broadcast(msg, {id(), msg.source, senderId});
-			return;
 		}
-		if (msg.type == "echo" && find(received_msgs_echo.begin(), received_msgs_echo.end(), msg.id) == received_msgs_echo.end()){
-			received_msgs_echo.push_back(msg.id);
-			if (algorithm == "bracha" && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
-			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
-			rc_broadcast(msg, {id(), msg.source, senderId});
-			return;
-		}
-		if (msg.type == "ready" && find(received_msgs_ready.begin(), received_msgs_ready.end(), msg.id) == received_msgs_ready.end()){
-			received_msgs_ready.push_back(msg.id);
-			if (algorithm == "bracha" && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
-			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
-			rc_broadcast(msg, {id(), msg.source, senderId});
-			return;
-		}
-		if (msg.type == "forward" && find(received_msgs_forward.begin(), received_msgs_forward.end(), msg.id) == received_msgs_forward.end()){
-			received_msgs_forward.push_back(msg.id);
-			if (algorithm == "bracha" && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
-			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
-			rc_broadcast(msg, {id(), msg.source, senderId});
-			return;
-		}
-		if (msg.type == "bundle" && find(received_msgs_bundle.begin(), received_msgs_bundle.end(), msg.id) == received_msgs_bundle.end()){
-			received_msgs_bundle.push_back(msg.id);
-			if (algorithm == "bracha" && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << br_str(msg) << RESET << endl;
-			if ((algorithm == "opodis_1" || algorithm == "opodis_2t+1") && print==true) cout << YELLOW << "[node_" << id() << "] propagating: " << op_str(msg) << RESET << endl;
-			rc_broadcast(msg, {id(), msg.source, senderId});
-			return;
-		}
-
-
+		
 		/*
 		if (find(received_msgs.begin(), received_msgs.end(), msg.id) == received_msgs.end()){
 			received_msgs.push_back(msg.id);
@@ -206,6 +178,7 @@ namespace quantas {
 			rc_broadcast(msg, {id(), msg.source, senderId}); 
 		}
 		*/
+		
 	}
 
 	//--------------------------------------------------  BRACHA ALGORITHM  --------------------------------------------------
@@ -351,23 +324,14 @@ namespace quantas {
 	void BRBPeer::opodis_rc_deliver(ExampleMessage msg){
 
 		// if the message is not new, then don't do anything
+		if (received_msgs_set.count(msg.id)) return;
 		//if ( find(received_msgs.begin(), received_msgs.end(), msg.id) != received_msgs.end() ) return;
-
-		if (msg.type == "send" && find(received_msgs_send.begin(), received_msgs_send.end(), msg.id) != received_msgs_send.end()) return;
-		if (msg.type == "echo" && find(received_msgs_echo.begin(), received_msgs_echo.end(), msg.id) != received_msgs_echo.end()) return;
-		if (msg.type == "ready" && find(received_msgs_ready.begin(), received_msgs_ready.end(), msg.id) != received_msgs_ready.end()) return;
-		if (msg.type == "forward" && find(received_msgs_forward.begin(), received_msgs_forward.end(), msg.id) != received_msgs_forward.end()) return;
-		if (msg.type == "bundle" && find(received_msgs_bundle.begin(), received_msgs_bundle.end(), msg.id) == received_msgs_bundle.end()) return;
 		
 
 		// if the message is new, save it so we don't use it again
 		if (print==true) cout << RED << "[node_" << id() <<"] received: " << op_str(msg) << RESET << endl;
+		received_msgs_set.insert(msg.id);
 		//received_msgs.push_back(msg.id);
-		if (msg.type == "send") received_msgs_send.push_back(msg.id);
-		if (msg.type == "echo") received_msgs_echo.push_back(msg.id);
-		if (msg.type == "ready") received_msgs_ready.push_back(msg.id);
-		if (msg.type == "forward") received_msgs_forward.push_back(msg.id);
-		if (msg.type == "bundle") received_msgs_bundle.push_back(msg.id);
 		commit = msg.C;
 
 		if (msg.type == "send" && msg.source == senderId && sent_forward_ps==false){
@@ -500,7 +464,7 @@ namespace quantas {
 			peer->msgs_sent_prev = peer->msgs_sent;
 		}
 		if (print==true) cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET << endl;
-		cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET << endl;
+		//cout << endl << BLUE << "End of round " << getRound() << "   msgs_sent_round: " << round << "  tot_msgs_sent: " << tot << RESET;
 	}
 
 	Simulation<quantas::ExampleMessage, quantas::BRBPeer>* generateSim() {

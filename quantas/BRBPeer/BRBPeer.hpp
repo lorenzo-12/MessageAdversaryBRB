@@ -12,6 +12,7 @@ You should have received a copy of the GNU General Public License along with QUA
 
 #include <iostream>
 #include <sstream>
+#include <unordered_set>
 #include "../Common/Peer.hpp"
 #include "../Common/Simulation.hpp"
 using namespace std;
@@ -84,11 +85,7 @@ namespace quantas{
 
         bool delivered = false;
         vector<string> received_msgs = {};
-        vector<string> received_msgs_send = {};
-        vector<string> received_msgs_echo = {};
-        vector<string> received_msgs_ready = {};
-        vector<string> received_msgs_forward = {};
-        vector<string> received_msgs_bundle = {};
+        unordered_set<string> received_msgs_set;
 
         //bracha
         int echo_threshold = 0;
