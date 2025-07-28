@@ -277,9 +277,10 @@ namespace quantas {
    		std::chrono::duration<double> durationTest; // chrono time interval
 
 		int _threadCount = thread::hardware_concurrency(); // By default, use as many hardware cores as possible
-		if (config.contains("threadCount") && config["threadCount"] > 0) {
-			_threadCount = config["threadCount"];
-		}
+		//if (config.contains("threadCount") && config["threadCount"] > 0) {
+		//	_threadCount = config["threadCount"];
+		//}
+		cout << "[simulation] Using " << _threadCount << " threads for the simulation." << endl;
 		if (_threadCount > config["topology"]["totalPeers"]) {
 			_threadCount = config["topology"]["totalPeers"];
 		}
@@ -363,7 +364,7 @@ namespace quantas {
 			endTimeTest = std::chrono::high_resolution_clock::now();
    			durationTest = endTimeTest - startTimeTest;
 
-			cout << "End test " << i << "  tot_bits_sent: " << totalBitSent << "   time:" << durationTest.count() << endl; 
+			cout << endl << "End test " << i << "  tot_bits_sent: " << totalBitSent << "   time:" << durationTest.count(); 
 			
 			
 			/* cout << "totalMsgSent: " << totalMsgSent << endl;

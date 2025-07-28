@@ -1,84 +1,84 @@
 {
-    "RunTime": 5.326714792,
+    "RunTime": 12.520184995,
     "tests": {
         "0": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169352
+            "totalMsgsSent": 170198
         },
         "1": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169361
+            "totalMsgsSent": 169344
         },
         "10": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170211
+            "totalMsgsSent": 169364
         },
         "11": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170199
+            "totalMsgsSent": 170211
         },
         "12": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169368
+            "totalMsgsSent": 170197
         },
         "13": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170205
+            "totalMsgsSent": 170203
         },
         "14": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
+            "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
@@ -88,93 +88,93 @@
         "15": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.05050505050505,
+            "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170197
+            "totalMsgsSent": 170200
         },
         "16": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170211
+            "totalMsgsSent": 170193
         },
         "17": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170201
+            "totalMsgsSent": 170194
         },
         "18": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
-            ],
-            "disconnectedNodes": [],
-            "maxDeliveryTime": 5,
-            "senderId": 0,
-            "totalMsgsSent": 170196
-        },
-        "19": {
-            "MessageAdversaryPower": 2,
-            "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
-            "byzantineNodes": [
-                15
-            ],
-            "disconnectedNodes": [],
-            "maxDeliveryTime": 5,
-            "senderId": 0,
-            "totalMsgsSent": 170199
-        },
-        "2": {
-            "MessageAdversaryPower": 2,
-            "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
-            "byzantineNodes": [
-                15
-            ],
-            "disconnectedNodes": [],
-            "maxDeliveryTime": 5,
-            "senderId": 0,
-            "totalMsgsSent": 170198
-        },
-        "20": {
-            "MessageAdversaryPower": 2,
-            "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
-            "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
             "totalMsgsSent": 170187
         },
+        "19": {
+            "MessageAdversaryPower": 2,
+            "avgDeliveryNodes": 100.0,
+            "avgDeliveryTime": 4.040404040404041,
+            "byzantineNodes": [
+                89
+            ],
+            "disconnectedNodes": [],
+            "maxDeliveryTime": 5,
+            "senderId": 0,
+            "totalMsgsSent": 170207
+        },
+        "2": {
+            "MessageAdversaryPower": 2,
+            "avgDeliveryNodes": 100.0,
+            "avgDeliveryTime": 4.040404040404041,
+            "byzantineNodes": [
+                89
+            ],
+            "disconnectedNodes": [],
+            "maxDeliveryTime": 5,
+            "senderId": 0,
+            "totalMsgsSent": 170202
+        },
+        "20": {
+            "MessageAdversaryPower": 2,
+            "avgDeliveryNodes": 100.0,
+            "avgDeliveryTime": 4.040404040404041,
+            "byzantineNodes": [
+                89
+            ],
+            "disconnectedNodes": [],
+            "maxDeliveryTime": 5,
+            "senderId": 0,
+            "totalMsgsSent": 170202
+        },
         "21": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
@@ -186,120 +186,120 @@
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170194
+            "totalMsgsSent": 170200
         },
         "23": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169344
+            "totalMsgsSent": 170209
         },
         "24": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
+            "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170213
+            "totalMsgsSent": 170204
         },
         "3": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.05050505050505,
+            "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170207
+            "totalMsgsSent": 170199
         },
         "4": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169343
+            "totalMsgsSent": 170202
         },
         "5": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
+            "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169331
+            "totalMsgsSent": 170204
         },
         "6": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170196
+            "totalMsgsSent": 170198
         },
         "7": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
+            "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170205
+            "totalMsgsSent": 170210
         },
         "8": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
             "avgDeliveryTime": 4.040404040404041,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 169361
+            "totalMsgsSent": 170204
         },
         "9": {
             "MessageAdversaryPower": 2,
             "avgDeliveryNodes": 100.0,
-            "avgDeliveryTime": 4.040404040404041,
+            "avgDeliveryTime": 4.05050505050505,
             "byzantineNodes": [
-                15
+                89
             ],
             "disconnectedNodes": [],
             "maxDeliveryTime": 5,
             "senderId": 0,
-            "totalMsgsSent": 170200
+            "totalMsgsSent": 170193
         }
     }
 }

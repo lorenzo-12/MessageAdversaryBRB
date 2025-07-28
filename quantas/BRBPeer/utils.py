@@ -117,7 +117,8 @@ def generateRandomNetMA1(net_name, byz_number, ma_power, delivery_threshold, alg
     topology_name = net_name.split("/")[-1].replace(".json","")
     
     del net_json["experiments"][0]["algorithm"]
-    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
+    del net_json["experiments"][0]["threadCount"]
+    net_json["experiments"][0]["outFile"] = f"MA1_{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma1", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 25
     net_json["experiments"][0]["rounds"] = 300
@@ -152,7 +153,8 @@ def generateRandomNetMA2(net_name, byz_number, ma_power, delivery_threshold, alg
     topology_name = net_name.split("/")[-1].replace(".json","")
     
     del net_json["experiments"][0]["algorithm"]
-    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
+    del net_json["experiments"][0]["threadCount"]
+    net_json["experiments"][0]["outFile"] = f"MA2_{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma2", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 25
     net_json["experiments"][0]["rounds"] = 300
@@ -190,7 +192,8 @@ def generateRandomNetMA3(net_name, byz_number, ma_power, delivery_threshold, alg
     topology_name = net_name.split("/")[-1].replace(".json","")
     
     del net_json["experiments"][0]["algorithm"]
-    net_json["experiments"][0]["outFile"] = f"{algorithm}_{topology_name}"
+    del net_json["experiments"][0]["threadCount"]
+    net_json["experiments"][0]["outFile"] = f"MA3_{algorithm}_{topology_name}"
     net_json["experiments"][0]["logFile"] = getOutputFile(topology_name, "ma3", byz_number, ma_power, algorithm)
     net_json["experiments"][0]["tests"] = 25
     net_json["experiments"][0]["rounds"] = 300
