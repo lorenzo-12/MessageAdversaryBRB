@@ -243,7 +243,7 @@ def plot_2D(data, ma, alg, t_fix: int = -1, d_fix: int = -1):
         short_name = short_name.replace("random_graph","rg")
         short_name = short_name.replace("_n24_k4","").replace("_n100_k6","").replace("_n99_k6","")
         axs1.plot(x_shifted, y, marker='o', label=f"{short_name}", color=color_map[topology], linewidth=lw)
-        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
     
     axs1.set_title(title_delivery, fontsize=fs)
@@ -306,7 +306,7 @@ def plot_2D(data, ma, alg, t_fix: int = -1, d_fix: int = -1):
         short_name = short_name.replace("random_graph","rg")
         short_name = short_name.replace("_n24_k4","").replace("_n100_k6","").replace("_n99_k6","")
         axs1.plot(x_shifted, y, marker='o', label=f"{short_name}", color=color_map[topology], linewidth=lw)
-        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
     
     axs1.set_title(title_time, fontsize=fs)
@@ -372,7 +372,7 @@ def plot_2D(data, ma, alg, t_fix: int = -1, d_fix: int = -1):
         short_name = short_name.replace("random_graph","rg")
         short_name = short_name.replace("_n24_k4","").replace("_n100_k6","").replace("_n99_k6","")
         axs1.plot(x_shifted, y, marker='o', label=f"{short_name}", color=color_map[topology], linewidth=lw)
-        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs1.fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
     
     axs1.set_title(title_msg, fontsize=fs)
@@ -476,7 +476,7 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
                                .replace("_n24_k4", "").replace("_n100_k6", "").replace("_n99_k6", "")
 
         axs[0].plot(x_shifted, y, marker='o', label=short_name, color=color_map[topology], linewidth=lw)
-        axs[0].fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs[0].fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
 
     axs[0].set_title(title_delivery, fontsize=fs)
@@ -528,7 +528,7 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
                              .replace("_n24_k4", "").replace("_n100_k6", "").replace("_n99_k6", "")
 
         axs[1].plot(x_shifted, y, marker='o', label=short_name, color=color_map[topology], linewidth=lw)
-        axs[1].fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs[1].fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
 
     axs[1].set_title(title_time, fontsize=fs)
@@ -586,7 +586,7 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
                              .replace("_n24_k4", "").replace("_n100_k6", "").replace("_n99_k6", "")
 
         axs[2].plot(x_shifted, y, marker='o', label=short_name, color=color_map[topology], linewidth=lw)
-        axs[2].fill_between(x_shifted, lower_bounds, upper_bounds, alpha=0.3)
+        axs[2].fill_between(x_shifted, lower_bounds, upper_bounds, color=color_map[topology], alpha=0.3)
         idx += 1
 
     axs[2].set_title(title_msg, fontsize=fs)
@@ -616,7 +616,109 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
 #-----------------------------------------------------------------------------------------------------------------------------
 
 
-for d in range(6):
+#-----------------------------------------------------------------------------------------------------------------------------
+def get_3D_matrix(data, ma, alg, topology):
+    k = 6    
+    short_name = topology.replace("multi_wheel", "ml") \
+                            .replace("generalized_wheel_center", "gwc") \
+                            .replace("generalized_wheel", "gw") \
+                            .replace("diamond", "d") \
+                            .replace("pasted_tree", "pt") \
+                            .replace("random_graph_pruned", "rg_pruned") \
+                            .replace("random_graph_n100_k6_byz_high_conn", "rg_high_n100_k6") \
+                            .replace("random_graph", "rg") \
+                            .replace("_n24_k4", "").replace("_n100_k6", "").replace("_n99_k6", "")
+                            
+    d_del = [[0 for i in range(k)] for j in range(k)]
+    d_time = [[0 for i in range(k)] for j in range(k)]
+    d_msg = [[0 for i in range(k)] for j in range(k)]
+    for t in range(k):
+        for d in range(k):
+            if t+d>k-1:
+                d_del[t][d] = None
+                d_time[t][d] = None
+                d_msg[t][d] = None
+    
+    matrix = data[topology][ma][alg]
+    
+    for t in sorted(matrix.keys()):
+        for d in sorted(matrix[t]):
+            d_del[t][d] = matrix[t][d]["del"][0][0]
+            d_time[t][d] = matrix[t][d]["time"][0][0]
+            d_msg[t][d] = matrix[t][d]["msg"][0][0] / 1_000_000
+            
+    d_del = np.asarray(d_del, dtype=float)
+    d_time = np.asarray(d_time, dtype=float)
+    d_msg = np.asarray(d_msg, dtype=float)  
+    
+    return d_del, d_time, d_msg, short_name
+        
+#-----------------------------------------------------------------------------------------------------------------------------
+
+
+#-----------------------------------------------------------------------------------------------------------------------------
+def plot_3D(data, ma, alg, plot_type):
+    # Create t and d axes (0 to 5)
+    k = 6
+    t = np.arange(k)
+    d = np.arange(k)
+    T, D = np.meshgrid(t, d)  # Build 2D grids for t and d
+
+    # Build the plot
+    fig = plt.figure(figsize=(8,8))
+    ax = fig.add_subplot(111, projection='3d')
+    max_val = 0
+    for topology in data.keys():
+        M_del, M_time, M_msg, short_name = get_3D_matrix(data, ma, alg, topology)
+        if (plot_type == "del"):
+            M = M_del 
+            title = "Avg Delivery Nodes (percentage)"
+        if (plot_type == "time"):
+            M = M_time
+            title = "Avg Delivery Time (steps)"
+        if (plot_type == "msg"):
+            M = M_msg
+            title = "Total Msgs Sent (millions)"
+        
+        tmp_val = []
+        for row in M:
+            tmp_val.append(max(row))
+        max_val = max(max_val, max(tmp_val))
+
+        # ensure M is a NumPy array with 2D shape
+        M = np.asarray(M, dtype=float)
+        ax.plot_surface(T, D, M, shade=False, alpha=0.8, label=short_name, color=color_map[topology])
+        
+        
+    ax.set_xlabel('Byzantine nodes (t)', labelpad=20)
+    ax.set_ylabel('Message adversary power (d)', labelpad=20)
+    ax.set_zlabel(title, labelpad=20)
+    ax.set_title(title, y=1.10)
+    ax.legend( loc='upper right', bbox_to_anchor=(1.10, 1), ncol=3)
+    
+    # Set axes limits
+    from matplotlib.ticker import MultipleLocator
+    ax.set_xlim(0, k-1)
+    ax.set_ylim(0, k-1)
+    ax.xaxis.set_major_locator(MultipleLocator(1))
+    ax.yaxis.set_major_locator(MultipleLocator(1))
+    ax.set_zlim(0, max_val*1.1)
+    ax.view_init(elev=10., azim=45)
+    
+    fig.subplots_adjust(left=0.1, right=0.90, bottom=0, top=0.95)
+    out_name = f"{plot_type}_MA{ma}_{alg}_{short_name}.png"
+    plt.savefig(os.path.join("results_img_3d", out_name), dpi=120)
+    plt.close()
+    
+    return
+#-----------------------------------------------------------------------------------------------------------------------------
+
+for ma in [1,2,3]:
+    for alg in ["bracha","opodis_1","opodis_2t+1"]:
+        for plot_type in ["del","time","msg"]:
+            plot_3D(data,ma,alg,plot_type)
+
+for d in [3]:
     plot_2D_together(data,1,"bracha",d_fix=d)
     plot_2D_together(data,1,"opodis_1",d_fix=d)
     plot_2D_together(data,1,"opodis_2t+1",d_fix=d)
