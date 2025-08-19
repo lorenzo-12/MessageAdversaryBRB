@@ -13,6 +13,7 @@ import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 import distinctipy
 import matplotlib.ticker as mticker
+from PIL import Image
 
 img_path = pathlib.Path(__file__).parent.parent.parent / "results_img" 
 
@@ -534,7 +535,7 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
     axs[1].set_title(title_time, fontsize=fs)
     axs[1].set_xlabel(xlabel1, fontsize=fs)
     axs[1].set_ylabel(ylabel_avgdeltime, fontsize=fs)
-    axs[1].set_ylim(0, 25)
+    axs[1].set_ylim(0, 27)
     axs[1].grid(True)
     axs[1].set_xticks(x)
     if (t_fix != -1):
@@ -604,8 +605,8 @@ def plot_2D_together(data, ma, alg, t_fix:int = -1, d_fix: int = -1):
     axs[2].tick_params(labelsize=fs)
 
     # Add legend once for the whole figure
-    handles, labels = axs[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=4, fontsize=fs)
+    #handles, labels = axs[0].get_legend_handles_labels()
+    #fig.legend(handles, labels, loc="upper center", ncol=4, fontsize=fs)
 
     if (t_fix != -1):
         plt.savefig(img_path / f"t{t_fix}_MA{ma}_{alg}_combined.jpg", dpi=100)
@@ -629,18 +630,11 @@ def get_3D_matrix(data, ma, alg, topology):
                             .replace("random_graph", "rg") \
                             .replace("_n24_k4", "").replace("_n100_k6", "").replace("_n99_k6", "")
                             
-    d_del = [[0 for i in range(k)] for j in range(k)]
-    d_time = [[0 for i in range(k)] for j in range(k)]
-    d_msg = [[0 for i in range(k)] for j in range(k)]
-    for t in range(k):
-        for d in range(k):
-            if t+d>k-1:
-                d_del[t][d] = None
-                d_time[t][d] = None
-                d_msg[t][d] = None
+    d_del = [[None for i in range(k)] for j in range(k)]
+    d_time = [[None for i in range(k)] for j in range(k)]
+    d_msg = [[None for i in range(k)] for j in range(k)]
     
     matrix = data[topology][ma][alg]
-    
     for t in sorted(matrix.keys()):
         for d in sorted(matrix[t]):
             d_del[t][d] = matrix[t][d]["del"][0][0]
@@ -657,44 +651,73 @@ def get_3D_matrix(data, ma, alg, topology):
 
 
 #-----------------------------------------------------------------------------------------------------------------------------
+def trim_manual(img_path, top=0, bottom=0, left=0, right=0):
+    """
+    Crop fixed pixels from each side of the image.
+    Example: top=5 removes 5 rows from the top.
+    """
+    img = Image.open(img_path)
+    w, h = img.size
+
+    # compute crop box (left, upper, right, lower)
+    crop_box = (
+        left,                  # new left
+        top,                   # new top
+        w - right,             # new right
+        h - bottom             # new bottom
+    )
+
+    cropped = img.crop(crop_box)
+    cropped.save(img_path)
+#-----------------------------------------------------------------------------------------------------------------------------
+
+
+#-----------------------------------------------------------------------------------------------------------------------------
 def plot_3D(data, ma, alg, plot_type):
     # Create t and d axes (0 to 5)
+    fs = 28
     k = 6
     t = np.arange(k)
     d = np.arange(k)
-    T, D = np.meshgrid(t, d)  # Build 2D grids for t and d
+    T, D = np.meshgrid(t, d, indexing="ij")  # Align axes with M[t, d]
 
     # Build the plot
-    fig = plt.figure(figsize=(8,8))
+    fig = plt.figure(figsize=(8,8), constrained_layout=True)
     ax = fig.add_subplot(111, projection='3d')
     max_val = 0
     for topology in data.keys():
         M_del, M_time, M_msg, short_name = get_3D_matrix(data, ma, alg, topology)
         if (plot_type == "del"):
             M = M_del 
-            title = "Avg Delivery Nodes (percentage)"
+            zlable = "Avg Delivery Nodes \n(percentage)"
         if (plot_type == "time"):
             M = M_time
-            title = "Avg Delivery Time (steps)"
+            zlable = "Avg Delivery Time \n(steps)"
         if (plot_type == "msg"):
             M = M_msg
-            title = "Total Msgs Sent (millions)"
+            zlable = "Total Msgs Sent \n(millions)"
         
         tmp_val = []
         for row in M:
             tmp_val.append(max(row))
-        max_val = max(max_val, max(tmp_val))
+        local_max = np.nanmax(M)
+        max_val = max(max_val, local_max)
+        if (plot_type == "time"):
+            max_val = 20
 
         # ensure M is a NumPy array with 2D shape
         M = np.asarray(M, dtype=float)
-        ax.plot_surface(T, D, M, shade=False, alpha=0.8, label=short_name, color=color_map[topology])
+        #ax.plot_surface(T, D, M, shade=False, alpha=0.8, label=short_name, color=color_map[topology])
+        Z = np.ma.masked_invalid(M)
+        ax.plot_surface(T, D, Z, shade=False, alpha=0.8, label=short_name, color=color_map[topology])
         
-        
-    ax.set_xlabel('Byzantine nodes (t)', labelpad=20)
-    ax.set_ylabel('Message adversary power (d)', labelpad=20)
-    ax.set_zlabel(title, labelpad=20)
-    ax.set_title(title, y=1.10)
-    ax.legend( loc='upper right', bbox_to_anchor=(1.10, 1), ncol=3)
+    ax.set_xlabel('Byzantine (t)', labelpad=20, fontsize=fs)
+    ax.set_ylabel('Message adversary (d)', labelpad=20, fontsize=fs)
+    ax.set_zlabel(zlable, labelpad=25, fontsize=fs)
+    ax.set_title(f"MA{ma} - {alg.replace("opodis","Albouy")}", y=0.9, fontsize=fs)
+    ax.tick_params(axis='x', which='major', labelsize=20)
+    ax.tick_params(axis='y', which='major', labelsize=20)
+    ax.tick_params(axis='z', which='major', labelsize=20)
     
     # Set axes limits
     from matplotlib.ticker import MultipleLocator
@@ -704,21 +727,47 @@ def plot_3D(data, ma, alg, plot_type):
     ax.yaxis.set_major_locator(MultipleLocator(1))
     ax.set_zlim(0, max_val*1.1)
     ax.view_init(elev=10., azim=45)
+    ax.set_position([0.06, 0.02, 0.90, 0.94])
     
-    fig.subplots_adjust(left=0.1, right=0.90, bottom=0, top=0.95)
-    out_name = f"{plot_type}_MA{ma}_{alg}_{short_name}.png"
-    plt.savefig(os.path.join("results_img_3d", out_name), dpi=120)
+    out_name = f"{plot_type}_MA{ma}_{alg.replace("opodis","Albouy")}.png"
+    img_path = os.path.join("results_img_3d", out_name)
+    plt.savefig(img_path, dpi=120, bbox_inches='tight', pad_inches=1)
     plt.close()
+    trim_manual(img_path, top=120, bottom=120, left=10, right=40)
     
-    return
 #-----------------------------------------------------------------------------------------------------------------------------
+
+
+#-----------------------------------------------------------------------------------------------------------------------------
+# Legend built from color_map
+f = lambda m, c: plt.plot([], [], marker=m, color=c, ls='none', markersize=12)[0]
+handles = []
+labels = []
+for lbl, rgb in color_map.items():
+    handles.append(f('s', rgb))
+    labels.append(lbl)
+legend = plt.legend(handles, labels, loc=3, framealpha=1, frameon=True, ncol=3, columnspacing=1.0, handletextpad=0.5, borderaxespad=0.5)
+
+def export_legend(legend, filename="results_img/legend.png", expand=[-5, -5, 5, 5]):
+    fig = legend.figure
+    fig.canvas.draw()
+    bbox = legend.get_window_extent()
+    bbox = bbox.from_extents(*(bbox.extents + np.array(expand)))
+    bbox = bbox.transformed(fig.dpi_scale_trans.inverted())
+    fig.savefig(filename, dpi=300, bbox_inches=bbox)
+
+export_legend(legend)
+#-----------------------------------------------------------------------------------------------------------------------------
+
+""" a,b,c,d = get_3D_matrix(data,1,"opodis_2t+1","multi_wheel_n99_k6")
+print(a) """
 
 for ma in [1,2,3]:
     for alg in ["bracha","opodis_1","opodis_2t+1"]:
         for plot_type in ["del","time","msg"]:
             plot_3D(data,ma,alg,plot_type)
 
-for d in [3]:
+""" for d in range(6):
     plot_2D_together(data,1,"bracha",d_fix=d)
     plot_2D_together(data,1,"opodis_1",d_fix=d)
     plot_2D_together(data,1,"opodis_2t+1",d_fix=d)
@@ -729,7 +778,7 @@ for d in [3]:
 
     plot_2D_together(data,3,"bracha",d_fix=d)
     plot_2D_together(data,3,"opodis_1",d_fix=d)
-    plot_2D_together(data,3,"opodis_2t+1",d_fix=d)
+    plot_2D_together(data,3,"opodis_2t+1",d_fix=d) """
 
 """ for d in range(6):
     plot_2D(data,1,"bracha",d_fix=d)

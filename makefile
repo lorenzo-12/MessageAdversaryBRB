@@ -20,7 +20,7 @@ PROJECT_DIR := quantas
 #
 
 #-->
-INPUTFILE := /topologies_bracha/MA3_topologies/random_graph_byz_high_conn_n100_k6.json
+INPUTFILE := /topologies_opodis_2t+1/MA1_topologies/multipartite_wheel_n99_k6.json
 #<--
 
 #INPUTFILE := /ExampleInputBig.json

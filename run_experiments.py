@@ -19,6 +19,10 @@ experiments = [
     "INPUTFILE := /topologies_<alg>/MA<x>_topologies/random_graph_byz_high_conn_n100_k6.json"
 ]
 
+experiments_2 = [
+    "INPUTFILE := /topologies_<alg>/MA<x>_topologies/multipartite_wheel_n99_k6.json"
+]
+
 files = [
     "generalized_wheel_byz_center_n100_k6.txt",
     "generalized_wheel_n100_k6.txt",
@@ -38,15 +42,15 @@ with open(path_ma1/file,"r") as f:
     total_tests = 100*len(data["experiments"])
 
 
-algorithm = "bracha"
+algorithm = "opodis_2t+1"
 processes = []
 
-for ma_type in [1,2,3]:
+for ma_type in [1]:
     # reset files to empty
     for file in files:
         f = open("results_status/"+file, "w+")
     
-    for i, exp in enumerate(experiments):
+    for i, exp in enumerate(experiments_2):
         final_file = ""
         check = False
         with open(path_makefile,"r") as f:
